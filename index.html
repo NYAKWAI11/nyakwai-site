@@ -1,0 +1,2465 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIENYAKWAISO ANWANZE SARL · Quincaillerie, briques de terre cuite, BTP</title>
+<meta name="description" content="Quincaillerie, production de briques de terre cuite et prestations BTP. Un seul interlocuteur, une seule responsabilité. Toumodi, Côte d'Ivoire.">
+<!-- cartes de partage -->
+<link rel="canonical" href="https://mienyakwaiso.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MIENYAKWAISO ANWANZE SARL">
+<meta property="og:locale" content="fr_CI">
+<meta property="og:url" content="https://mienyakwaiso.com/">
+<meta property="og:title" content="MIENYAKWAISO ANWANZE SARL · Quincaillerie, briques de terre cuite, BTP">
+<meta property="og:description" content="Quincaillerie ouverte depuis 2016 à Toumodi, production de briques de terre cuite et prestations BTP. Un seul interlocuteur, une seule responsabilité. Livraison sous 48 h sur tout le territoire ivoirien.">
+<meta property="og:image" content="https://mienyakwaiso.com/images/partage-accueil.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Deux ouvriers en gilet et casque devant un stock de ciment, dans la quincaillerie de Toumodi">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MIENYAKWAISO ANWANZE SARL · Quincaillerie, briques de terre cuite, BTP">
+<meta name="twitter:description" content="Quincaillerie ouverte depuis 2016 à Toumodi, production de briques de terre cuite et prestations BTP. Un seul interlocuteur, une seule responsabilité. Livraison sous 48 h sur tout le territoire ivoirien.">
+<meta name="twitter:image" content="https://mienyakwaiso.com/images/partage-accueil.jpg">
+<meta name="twitter:image:alt" content="Deux ouvriers en gilet et casque devant un stock de ciment, dans la quincaillerie de Toumodi">
+<!-- /cartes de partage -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Public+Sans:wght@300;400;500;600;700&display=swap">
+<style>
+:root{
+  /* Les deux couleurs qui dominent : bleu de France et orange hollandais */
+  --bleu:#318CE7;          /* bleu de France */
+  --bleu-fonce:#14498C;    /* pour les fonds et le texte, contraste */
+  --orange:#FF9B00;        /* orange hollandais */
+  --orange-fonce:#D97800;
+  --encre:#0B1A2B; --papier:#FBFAF8; --sable:#EFF4FA;
+  --gris:#56626F; --ligne:#DCE4EC; --wa:#25D366;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --sans:"Public Sans",system-ui,-apple-system,sans-serif;
+  --max:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--encre);background:var(--papier);line-height:1.6;font-size:17px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.12;letter-spacing:-.02em;font-weight:700}
+
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* ---------- header ---------- */
+/* le header n'apparaît qu'une fois la bannière dépassée */
+header{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(11,26,43,.95);backdrop-filter:blur(10px);
+  border-bottom:1px solid #1E3550;transform:translateY(-100%);transition:transform .35s cubic-bezier(.3,.8,.3,1)}
+header.visible{transform:translateY(0)}
+.bar{display:flex;align-items:center;gap:16px;height:76px}
+.logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
+.logo img{height:56px;width:auto;border-radius:7px;display:block}
+nav{margin-left:auto;display:flex;gap:24px;align-items:center}
+nav a{text-decoration:none;font-size:15px;font-weight:500;color:#AEBECE;white-space:nowrap}
+nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 22px;border-radius:8px;font-weight:600;font-size:15.5px;text-decoration:none;border:0;cursor:pointer;font-family:var(--sans);transition:transform .15s,filter .15s}
+.btn:hover{filter:brightness(1.07);transform:translateY(-1px)}
+.btn-wa{background:var(--wa);color:#062d13}
+.btn-bleu{background:var(--bleu);color:#04213F}
+.btn-orange{background:var(--orange);color:#3A2200}
+.btn-ghost{background:transparent;color:var(--bleu);border:1.5px solid var(--bleu)}
+.btn-sm{padding:10px 16px;font-size:14.5px}
+.burger{display:none;margin-left:auto;background:none;border:1.5px solid #2A4763;color:#fff;border-radius:8px;padding:9px 12px;font-size:17px;cursor:pointer}
+
+/* ============ BANNIÈRE : plein écran, logo + 3 images, rien d'autre ============ */
+.banniere{background:var(--encre);height:100vh;height:100svh;position:relative;overflow:hidden}
+.marque{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;pointer-events:none;
+  perspective:1200px}
+.marque img{height:150px;width:auto;border-radius:13px;
+  box-shadow:0 22px 60px rgba(0,0,0,.70), 0 0 0 1px rgba(255,255,255,.10);
+  transform-origin:50% 50%;
+  animation:toupie 9s cubic-bezier(.22,.85,.28,1) infinite both}
+/* elle tourne, se pose, respire, puis repart */
+@keyframes toupie{
+  0%   {opacity:0; transform:translateZ(-420px) rotateY(-900deg) scale(.45)}
+  18%  {opacity:1; transform:translateZ(0) rotateY(-22deg) scale(1.08)}
+  24%  {transform:rotateY(8deg) scale(.99)}
+  28%  {transform:rotateY(0deg) scale(1) translateY(0)}
+  46%  {transform:rotateY(0deg) scale(1) translateY(-12px)}
+  64%  {transform:rotateY(0deg) scale(1) translateY(0)}
+  76%  {transform:rotateY(0deg) scale(1) translateY(-6px)}
+  88%  {opacity:1; transform:rotateY(0deg) scale(1) translateY(0)}
+  100% {opacity:1; transform:rotateY(-360deg) scale(1) translateY(0)}
+}
+@media(prefers-reduced-motion:reduce){.marque img{animation:none}}
+.trio{height:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#04101C}
+/* voile radial pour détacher le logo du centre */
+.banniere::after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:radial-gradient(ellipse 42% 36% at 50% 50%, rgba(4,16,28,.44) 0%, rgba(4,16,28,.20) 45%, rgba(4,16,28,0) 70%)}
+.pan{position:relative;display:block;overflow:hidden;text-decoration:none;color:#fff;isolation:isolate}
+.pan img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;will-change:transform;
+  animation:flotte 24s ease-in-out infinite;transform-origin:center}
+.pan:nth-child(2) img{animation-duration:29s;animation-delay:-7s}
+.pan:nth-child(3) img{animation-duration:34s;animation-delay:-15s}
+@keyframes flotte{
+  0%  {transform:scale(1.10) translate3d(0,0,0)}
+  35% {transform:scale(1.17) translate3d(-2%,-1.4%,0)}
+  70% {transform:scale(1.14) translate3d(1.6%,-2.2%,0)}
+  100%{transform:scale(1.10) translate3d(0,0,0)}
+}
+.pan::after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(4,16,28,.02) 0%,rgba(4,16,28,.34) 48%,rgba(4,16,28,.86) 100%);
+  transition:background .4s}
+.pan:hover::after{background:linear-gradient(180deg,rgba(4,16,28,0) 0%,rgba(4,16,28,.26) 44%,rgba(4,16,28,.82) 100%)}
+.pan__in{position:absolute;inset:auto 0 0 0;padding:30px 26px 32px;z-index:2;animation:respire 9s ease-in-out infinite}
+.pan:nth-child(2) .pan__in{animation-delay:-3s}
+.pan:nth-child(3) .pan__in{animation-delay:-6s}
+@keyframes respire{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.pan__tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:14px}
+.tag-ok{background:var(--bleu);color:#04213F}
+.tag-pre{background:var(--orange);color:#3A2200}
+.pan h2{font-size:30px;margin-bottom:9px;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.5)}
+.pan p{font-size:15.5px;color:#D8E2EC;margin-bottom:17px;max-width:340px}
+.pan__go{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:15px;color:#fff;border-bottom:2px solid var(--orange);padding-bottom:3px}
+.pan__go i{font-style:normal;transition:transform .25s}
+.pan:hover .pan__go i{transform:translateX(7px)}
+@media(prefers-reduced-motion:reduce){.pan img,.pan__in{animation:none}}
+
+/* ---------- bandeau valeurs ---------- */
+.promesse{background:var(--bleu-fonce);color:#fff;padding:22px 0}
+.promesse ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:12px 40px;font-family:var(--display);font-weight:700;font-size:clamp(15px,2.1vw,20px)}
+.promesse li{display:flex;align-items:center;gap:11px}
+.promesse li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange);flex-shrink:0}
+
+/* ---------- sections ---------- */
+section{padding:76px 0}
+.sec-clair{background:var(--sable)}
+.sec-encre{background:var(--encre);color:#fff}
+/* section avec bâtisses en terre cuite qui flottent en arrière-plan */
+.sec-photo{position:relative;overflow:hidden;isolation:isolate}
+.sec-photo>.fond{position:absolute;inset:-6%;z-index:0}
+.sec-photo>.fond img{width:100%;height:100%;object-fit:cover;
+  animation:derive 32s ease-in-out infinite;will-change:transform}
+.sec-photo>.fond::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(160deg,rgba(11,26,43,.90) 0%,rgba(11,26,43,.82) 42%,rgba(11,26,43,.93) 100%)}
+.sec-photo>.wrap{position:relative;z-index:2}
+@keyframes derive{
+  0%,100%{transform:scale(1.08) translate3d(0,0,0)}
+  33%    {transform:scale(1.15) translate3d(-2.2%,-1.6%,0)}
+  66%    {transform:scale(1.12) translate3d(1.8%,-2.4%,0)}
+}
+@media(prefers-reduced-motion:reduce){.sec-photo>.fond img{animation:none}}
+.sec-encre h2,.sec-encre h3,.sec-encre h4{color:#fff}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--orange-fonce);margin-bottom:12px}
+.sec-encre .kicker,.bande .kicker{color:var(--orange)}
+h2.titre{font-size:clamp(27px,4.2vw,42px);margin-bottom:16px;max-width:780px}
+.chapo{font-size:clamp(16.5px,2vw,19px);color:var(--gris);max-width:700px;margin-bottom:40px}
+.sec-encre .chapo{color:#AEC0D2}
+.txt{font-size:17px;color:var(--gris);margin-bottom:18px}
+.note{font-size:14px;color:var(--gris);margin-top:14px;max-width:780px}
+.sec-encre .note{color:#8FA4B8}
+
+/* ---------- qui sommes-nous ---------- */
+.duo{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.duo img{border-radius:12px;box-shadow:0 18px 44px rgba(11,26,43,.18)}
+.valeurs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.valeur{background:#fff;border:1px solid var(--ligne);border-top:3px solid var(--bleu);border-radius:11px;padding:22px 18px}
+.valeur:nth-child(even){border-top-color:var(--orange)}
+.valeur h4{font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:var(--bleu-fonce);margin-bottom:7px}
+.valeur p{font-size:14.5px;color:var(--gris);line-height:1.5}
+.citation{border-left:4px solid var(--orange);padding:6px 0 6px 22px;margin:26px 0 0;font-family:var(--display);font-size:clamp(17px,2.3vw,21px);font-weight:600;line-height:1.35}
+.citation cite{display:block;font-family:var(--sans);font-size:14px;font-weight:600;font-style:normal;color:var(--gris);margin-top:12px}
+
+/* ---------- familles cliquables ---------- */
+.familles{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fam{background:#fff;border:1px solid var(--ligne);border-radius:12px;overflow:hidden;
+  transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer;text-align:left;
+  font-family:var(--sans);padding:0;display:block;width:100%}
+.fam:hover,.fam:focus-visible{transform:translateY(-4px);box-shadow:0 14px 32px rgba(11,26,43,.16);border-color:var(--bleu);outline:0}
+.fam__ph{aspect-ratio:4/3;overflow:hidden;background:var(--sable);position:relative}
+.fam__ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.fam:hover .fam__ph img{transform:scale(1.07)}
+.fam__cpt{position:absolute;right:9px;bottom:9px;background:rgba(11,26,43,.86);color:#fff;
+  font-size:11.5px;font-weight:700;letter-spacing:.04em;padding:5px 10px;border-radius:999px}
+.fam__txt{padding:15px 17px 17px}
+.fam h4{font-size:16.5px;margin-bottom:5px}
+.fam p{font-size:13.5px;color:var(--gris);line-height:1.45}
+.fam__voir{display:inline-flex;align-items:center;gap:7px;margin-top:10px;font-size:13.5px;
+  font-weight:700;color:var(--bleu-fonce)}
+.fam__voir i{font-style:normal;transition:transform .25s}
+.fam:hover .fam__voir i{transform:translateX(5px)}
+
+/* ---------- galerie modale ---------- */
+.gal{position:fixed;inset:0;z-index:100;background:rgba(6,15,26,.94);display:none;
+  padding:24px 16px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.gal.ouverte{display:block}
+.gal__box{max-width:1100px;margin:0 auto;background:var(--papier);border-radius:14px;overflow:hidden}
+.gal__hd{display:flex;align-items:center;gap:16px;padding:20px 24px;border-bottom:1px solid var(--ligne);
+  position:sticky;top:0;background:var(--papier);z-index:2}
+.gal__hd h3{font-size:22px;flex:1;min-width:0}
+.gal__hd p{font-size:13.5px;color:var(--gris);margin-top:3px}
+.gal__x{background:var(--sable);border:1px solid var(--ligne);border-radius:9px;width:42px;height:42px;
+  font-size:22px;line-height:1;cursor:pointer;color:var(--encre);flex-shrink:0}
+.gal__x:hover{background:var(--ligne)}
+.gal__grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;padding:22px 24px}
+.gal__grid figure{background:#fff;border:1px solid var(--ligne);border-radius:10px;overflow:hidden}
+.gal__grid img{width:100%;aspect-ratio:1/1;object-fit:contain;background:#fff;padding:8px}
+.gal__ft{padding:0 24px 24px;font-size:13.5px;color:var(--gris)}
+.gal__ft .btn{margin-top:14px}
+body.fige{overflow:hidden}
+
+/* ---------- tableau ---------- */
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl{width:100%;min-width:480px;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 3px 14px rgba(11,26,43,.08);font-size:15.5px;color:var(--encre)}
+.tbl th,.tbl td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--ligne)}
+.tbl thead th{background:var(--bleu-fonce);color:#fff;font-family:var(--display);font-size:14px}
+.tbl td.num,.tbl th.num{text-align:right;font-variant-numeric:tabular-nums}
+.tbl td.num{font-weight:600}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tbody tr:nth-child(even){background:#F7FAFD}
+
+/* ---------- calculateur ---------- */
+.calc{background:#12293F;border:1px solid #23415C;border-radius:14px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.26)}
+.calc label{display:block;font-weight:600;font-size:15px;margin-bottom:9px;color:#fff}
+.calc-in{display:flex;gap:10px;align-items:stretch;margin-bottom:22px}
+.calc input{flex:1;min-width:0;font-family:var(--sans);font-size:26px;font-weight:700;padding:13px 16px;border:2px solid #2B4A67;border-radius:9px;background:#08151F;color:#fff;font-variant-numeric:tabular-nums}
+.calc input:focus{outline:0;border-color:var(--orange)}
+.calc .unite{display:flex;align-items:center;padding:0 17px;background:#1B3A55;border-radius:9px;font-weight:700;font-size:15px;color:#A7BACC}
+.lignes{list-style:none}
+.lignes li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px dashed #2B4A67;font-size:15.5px;color:#C2D0DE}
+.lignes li span:last-child{font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap;color:#fff}
+.lignes li.total{border-bottom:0;padding-top:16px;font-family:var(--display);font-size:20px;font-weight:700;color:#fff}
+.lignes li.total span:last-child{color:var(--orange);font-size:24px}
+.eur{font-size:13.5px;color:#8FA4B8;text-align:right;margin-top:6px}
+.faits{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
+.fait{border-top:3px solid var(--orange);padding-top:16px}
+.fait strong{display:block;font-family:var(--display);font-size:clamp(26px,3.6vw,36px);line-height:1.05;margin-bottom:7px}
+.fait span{font-size:14.5px;color:var(--gris);display:block}
+.sec-encre .fait span{color:#A5B7C9}
+
+/* ---------- choisir ma maison ---------- */
+.maisons{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:34px}
+.mai{background:#fff;border:2px solid var(--ligne);border-radius:13px;padding:18px 16px 20px;cursor:pointer;text-align:left;font-family:var(--sans);transition:border-color .2s,transform .2s,box-shadow .2s}
+.mai:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,26,43,.12)}
+.mai[aria-pressed="true"]{border-color:var(--bleu);box-shadow:0 0 0 4px rgba(49,140,231,.16)}
+.mai__ph{aspect-ratio:4/3;overflow:hidden;border-radius:9px;margin-bottom:13px;background:var(--sable)}
+.mai__ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.mai:hover .mai__ph img{transform:scale(1.06)}
+.mai h4{font-size:17px;margin-bottom:4px}
+.mai .m2{font-family:var(--display);font-size:22px;color:var(--bleu-fonce);font-weight:700}
+.mai__bas{display:flex;gap:12px;align-items:flex-start;margin-top:11px}
+.mai svg{width:78px;flex:0 0 78px;height:auto;display:block;border-radius:6px;background:var(--sable);border:1px solid var(--ligne)}
+.mai .det{font-size:13px;color:var(--gris);line-height:1.42}
+.recap{display:grid;grid-template-columns:1fr 1fr;gap:26px;background:#fff;border:1px solid var(--ligne);border-left:5px solid var(--orange);border-radius:13px;padding:28px}
+.recap .lignes li{color:var(--gris);border-bottom-color:var(--ligne)}
+.recap .lignes li span:last-child{color:var(--encre)}
+.recap .lignes li.total{color:var(--encre)}
+.recap .lignes li.total span:last-child{color:var(--orange-fonce)}
+.recap .eur{color:var(--gris)}
+.surface-in{display:flex;gap:10px;margin:8px 0 20px}
+.surface-in input{flex:1;min-width:0;font-family:var(--sans);font-size:24px;font-weight:700;padding:12px 15px;border:2px solid var(--ligne);border-radius:9px;background:var(--sable);color:var(--encre);font-variant-numeric:tabular-nums}
+.surface-in input:focus{outline:0;border-color:var(--bleu)}
+.surface-in .unite{display:flex;align-items:center;padding:0 16px;background:var(--sable);border-radius:9px;font-weight:700;color:var(--gris)}
+
+/* ---------- jalons ---------- */
+.jalons{list-style:none;counter-reset:j;max-width:760px}
+.jalons li{counter-increment:j;position:relative;padding:0 0 26px 62px;border-left:2px solid var(--ligne);margin-left:19px}
+.jalons li:last-child{border-left-color:transparent;padding-bottom:0}
+.jalons li::before{content:counter(j);position:absolute;left:-20px;top:-4px;width:38px;height:38px;border-radius:50%;background:var(--bleu-fonce);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:16px}
+.jalons h4{font-size:18px;margin-bottom:5px}
+.jalons p{font-size:15px;color:var(--gris)}
+.jalons .pct{display:inline-block;background:var(--orange);color:#3A2200;font-weight:700;font-size:13px;padding:3px 10px;border-radius:999px;margin-left:9px;vertical-align:2px}
+
+/* ---------- blocs ---------- */
+.cartes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.carte{background:#fff;border:1px solid var(--ligne);border-top:3px solid var(--bleu);border-radius:12px;padding:26px 24px}
+.carte h4{font-size:18px;margin-bottom:9px;color:var(--bleu-fonce)}
+.carte p{font-size:15px;color:var(--gris)}
+.bande{position:relative;min-height:480px;display:flex;align-items:center;overflow:hidden;padding:60px 0}
+.bande img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bande::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,26,43,.95) 0%,rgba(11,26,43,.80) 48%,rgba(11,26,43,.28) 100%)}
+.bande .wrap{position:relative;z-index:2}
+.bande h2,.bande h3,.bande h4{color:#fff}
+.bande p{color:#C9D6E3}
+.bande .box{max-width:640px}
+.contre{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
+.contre div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:20px}
+.contre h4{font-size:14.5px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:9px}
+.contre p{font-size:14.5px;line-height:1.5}
+.contre .oui h4{color:var(--orange)}
+.zones{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.zone{background:#fff;border:1px solid var(--ligne);border-left:4px solid var(--bleu);border-radius:11px;padding:24px}
+.zone:nth-child(2){border-left-color:var(--orange)}
+.zone:nth-child(3){border-left-color:var(--bleu-fonce)}
+.zone h4{font-size:17.5px;margin-bottom:8px}
+.zone .delai{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-fonce);margin-bottom:11px}
+.zone p{font-size:14.5px;color:var(--gris)}
+.qr{max-width:840px}
+.qr details{background:#fff;border:1px solid var(--ligne);border-radius:11px;margin-bottom:12px;overflow:hidden}
+.qr summary{cursor:pointer;padding:18px 22px;font-family:var(--display);font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.qr summary::-webkit-details-marker{display:none}
+.qr summary::after{content:"+";color:var(--orange-fonce);font-size:24px;line-height:1}
+.qr details[open] summary::after{content:"–"}
+.qr .rep{padding:0 22px 20px;font-size:15.5px;color:var(--gris)}
+.cta-final{background:var(--bleu-fonce);color:#fff;text-align:center;padding:70px 0}
+.cta-final h2{color:#fff;font-size:clamp(26px,4vw,40px);margin-bottom:14px}
+.cta-final p{color:#C3D6EC;max-width:620px;margin:0 auto 28px;font-size:17.5px}
+.cta-final .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-final .btn-ghost{color:#fff;border-color:rgba(255,255,255,.65)}
+
+/* ---------- footer ---------- */
+footer{background:var(--encre);color:#95A7B9;padding:56px 0 30px;font-size:14.5px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px;margin-bottom:36px}
+footer h5{font-family:var(--display);color:#fff;font-size:15px;margin-bottom:13px}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--orange)}
+.legal{border-top:1px solid #1E3550;padding-top:22px;font-size:13px;color:#697B8D;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.avert{background:#12293F;border:1px solid #23415C;border-radius:10px;padding:16px 18px;font-size:13.5px;color:#8FA4B8;margin-bottom:30px}
+.avert b{color:#C6D5E3}
+
+/* ---------- gamme terre cuite ---------- */
+.gamme{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.prod{background:#fff;border:1px solid var(--ligne);border-radius:12px;padding:22px 20px;position:relative;display:flex;flex-direction:column}
+.sec-encre .prod{background:#12293F;border-color:#23415C}
+.prod__st{position:absolute;top:14px;right:14px;font-size:10.5px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;padding:4px 9px;border-radius:999px}
+.st-1{background:var(--orange);color:#3A2200}
+.st-2{background:rgba(49,140,231,.18);color:var(--bleu);border:1px solid rgba(49,140,231,.45)}
+.prod__ph{aspect-ratio:3/2;overflow:hidden;border-radius:9px;margin:-4px -4px 15px;background:var(--sable)}
+.prod__ph img{width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.2,.7,.3,1)}
+.prod:hover .prod__ph img{transform:scale(1.07)}
+.prod h4{font-size:17.5px;margin-bottom:6px;padding-right:74px}
+.prod p{font-size:14px;color:var(--gris);line-height:1.45;flex:1}
+.sec-encre .prod p{color:#A5B7C9}
+.prod .px{margin-top:13px;padding-top:13px;border-top:1px solid var(--ligne);font-family:var(--display);
+  font-weight:700;font-size:16px;color:var(--bleu)}
+.sec-encre .prod .px{border-color:#23415C}
+.prod .px small{display:block;font-family:var(--sans);font-weight:400;font-size:12.5px;color:var(--gris);margin-top:3px}
+.sec-encre .prod .px small{color:#8FA4B8}
+
+/* ---------- dix ans ---------- */
+.dixans{background:var(--encre);color:#fff;border-radius:16px;padding:44px;margin-top:52px;
+  display:grid;grid-template-columns:230px 1fr;gap:44px;align-items:center;position:relative;overflow:hidden}
+.dixans::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 90% at 8% 50%, rgba(255,155,0,.18), transparent 62%)}
+.dixans>*{position:relative;z-index:1}
+.dixans__n{text-align:center}
+.dixans__n b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(62px,10vw,104px);
+  line-height:.92;color:var(--orange);letter-spacing:-.05em}
+.dixans__n span{display:block;font-family:var(--display);font-weight:700;font-size:20px;margin-top:4px}
+.dixans__n em{display:block;font-style:normal;font-size:13px;letter-spacing:.2em;color:#8FA4B8;margin-top:10px}
+.dixans h3{font-size:clamp(21px,2.9vw,28px);margin-bottom:16px;color:#fff}
+.dixans p{font-size:16.5px;color:#C3CEDB;margin-bottom:14px;line-height:1.6}
+.dixans p:last-child{margin-bottom:0}
+.dixans strong{color:#fff}
+
+/* ---------- héritage ---------- */
+.heritage{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.hcell{position:relative;border-radius:12px;overflow:hidden;background:var(--encre);margin:0}
+.hcell--large{grid-column:span 2;grid-row:span 2}
+.hcell img{width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.2,.7,.3,1)}
+.hcell:hover img{transform:scale(1.07)}
+.hcell figcaption{position:absolute;inset:auto 0 0 0;padding:16px 16px 15px;color:#fff;font-size:13px;line-height:1.45;
+  background:linear-gradient(180deg,rgba(11,26,43,0) 0%,rgba(11,26,43,.86) 55%,rgba(11,26,43,.96) 100%)}
+.hcell figcaption b{display:block;font-family:var(--display);font-size:16px;margin-bottom:4px}
+.hcell--large figcaption{padding:22px 22px 20px;font-size:14.5px}
+.hcell--large figcaption b{font-size:20px;margin-bottom:6px}
+.fil{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+.fil div{background:#fff;border:1px solid var(--ligne);border-top:3px solid var(--orange);border-radius:11px;padding:22px 20px}
+.fil span{display:block;font-family:var(--display);font-weight:700;font-size:19px;color:var(--bleu-fonce);margin-bottom:8px}
+.fil p{font-size:14.5px;color:var(--gris);line-height:1.5}
+
+/* ---------- manifeste habitat sain ---------- */
+.manif{max-width:820px}
+.manif p{font-size:clamp(17px,2.2vw,20px);line-height:1.55;margin-bottom:20px;color:#C9D6E3}
+.manif p strong{color:#fff}
+.manif .grand{font-family:var(--display);font-weight:700;font-size:clamp(22px,3.4vw,32px);line-height:1.25;
+  color:#fff;border-left:4px solid var(--orange);padding-left:24px;margin:32px 0}
+
+/* ---------- bibliothèque ---------- */
+.onglets{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.onglet{background:#fff;border:1.5px solid var(--ligne);border-radius:999px;padding:10px 20px;font-family:var(--sans);
+  font-weight:600;font-size:14.5px;cursor:pointer;color:var(--gris)}
+.onglet[aria-selected="true"]{background:var(--bleu-fonce);border-color:var(--bleu-fonce);color:#fff}
+.biblio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.biblio figure{background:#fff;border:1px solid var(--ligne);border-radius:12px;overflow:hidden}
+.biblio img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.biblio figcaption{padding:14px 16px 16px;font-size:14px;color:var(--gris)}
+.biblio figcaption b{display:block;color:var(--encre);font-family:var(--display);font-size:16px;margin-bottom:4px}
+.vide{grid-column:1/-1;background:#fff;border:1.5px dashed var(--ligne);border-radius:12px;padding:40px 28px;text-align:center}
+.vide h4{font-size:19px;margin-bottom:10px}
+.vide p{font-size:15px;color:var(--gris);max-width:560px;margin:0 auto}
+
+/* ---------- rejoindre ---------- */
+.rej{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.rejc{background:#fff;border:1px solid var(--ligne);border-left:4px solid var(--bleu);border-radius:12px;padding:26px 24px;display:flex;flex-direction:column}
+.rejc:nth-child(2){border-left-color:var(--orange)}
+.rejc:nth-child(3){border-left-color:var(--bleu-fonce)}
+.rejc:nth-child(4){border-left-color:var(--orange-fonce)}
+.rejc h4{font-size:19px;margin-bottom:8px}
+.rejc p{font-size:15px;color:var(--gris);margin-bottom:8px}
+.rejc ul{list-style:none;margin:6px 0 18px;flex:1}
+.rejc li{font-size:14.5px;color:var(--gris);padding-left:20px;position:relative;margin-bottom:6px}
+.rejc li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;border-radius:50%;background:var(--orange)}
+
+/* ---------- FAB ---------- */
+.fab{position:fixed;right:18px;bottom:18px;z-index:70;display:flex;align-items:center;gap:10px;background:var(--wa);color:#062d13;padding:14px 20px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;box-shadow:0 8px 26px rgba(0,0,0,.32);transition:transform .2s,filter .2s}
+.fab:hover{filter:brightness(1.06);transform:translateY(-3px) scale(1.03)}
+
+/* ---------- rail de navigation, discret et centré ---------- */
+.fleches{position:fixed;right:16px;top:50%;z-index:69;
+  transform:translateY(-50%) translateX(12px);
+  display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 5px;border-radius:26px;
+  background:rgba(252,250,247,.76);backdrop-filter:blur(16px) saturate(1.5);-webkit-backdrop-filter:blur(16px) saturate(1.5);
+  border:1px solid rgba(11,26,43,.11);box-shadow:0 6px 22px rgba(11,26,43,.16);
+  opacity:0;visibility:hidden;
+  transition:opacity .4s,transform .4s cubic-bezier(.2,.9,.3,1),visibility .4s,background .3s,box-shadow .3s}
+.fleches.visible{opacity:.72;visibility:visible;transform:translateY(-50%) translateX(0)}
+.fleches:hover,.fleches:focus-within{opacity:1;box-shadow:0 12px 34px rgba(11,26,43,.16)}
+.fl{width:34px;height:34px;border:0;border-radius:50%;background:transparent;color:var(--gris);
+  display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;
+  transition:color .2s,background .2s,transform .2s cubic-bezier(.2,.9,.3,1.4)}
+.fl svg{width:17px;height:17px}
+.fl:hover{color:#fff;background:var(--bleu);transform:scale(1.14)}
+.fl:active{transform:scale(.9)}
+.fl[disabled]{opacity:.2;pointer-events:none}
+.fl--bout{color:var(--orange-fonce)}
+.fl__sep{width:15px;height:1px;background:rgba(11,26,43,.11);margin:4px 0}
+@media(max-width:1000px){
+  .fleches{right:12px;padding:5px 4px}
+  .fl{width:31px;height:31px}
+  .fl svg{width:15px;height:15px}
+}
+@media(max-width:560px){ .fleches{display:none} }
+
+/* ---------- bouton clignotant ---------- */
+.clignote{position:relative;animation:pulse 1.9s ease-in-out infinite}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(255,155,0,.72), 0 0 0 0 rgba(255,155,0,0)}
+  50%    {box-shadow:0 0 0 9px rgba(255,155,0,0), 0 0 26px 4px rgba(255,155,0,.45)}
+}
+.clignote::before{content:"";position:absolute;left:-5px;top:-5px;width:13px;height:13px;border-radius:50%;
+  background:var(--orange);border:2px solid var(--papier);animation:point 1.9s ease-in-out infinite}
+@keyframes point{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.45);opacity:.55}}
+
+/* ---------- survol : tout doit réagir ---------- */
+.fam,.mai,.prod,.carte,.valeur,.zone,.rejc,.biblio figure,.fil div,.dixans{
+  transition:transform .25s cubic-bezier(.2,.8,.3,1),box-shadow .25s,border-color .25s}
+.prod:hover,.valeur:hover,.zone:hover,.rejc:hover,.biblio figure:hover,.fil div:hover{
+  transform:translateY(-5px);box-shadow:0 16px 36px rgba(11,26,43,.15)}
+.carte{position:relative;overflow:hidden}
+.carte::after{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--orange);
+  transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.3,1)}
+.carte:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(11,26,43,.17)}
+.carte:hover::after{transform:scaleX(1)}
+.biblio figure{overflow:hidden}
+.biblio figure img{transition:transform .55s cubic-bezier(.2,.7,.3,1)}
+.biblio figure:hover img{transform:scale(1.07)}
+
+/* cadre générique : toute photo isolée réagit au curseur */
+.zoom{display:block;overflow:hidden;border-radius:12px;box-shadow:0 18px 44px rgba(11,26,43,.18);
+  transition:box-shadow .35s,transform .35s cubic-bezier(.2,.8,.3,1)}
+.zoom img{display:block;width:100%;transition:transform .6s cubic-bezier(.2,.7,.3,1);box-shadow:none;border-radius:0}
+.zoom:hover{transform:translateY(-4px);box-shadow:0 26px 60px rgba(11,26,43,.26)}
+.zoom:hover img{transform:scale(1.06)}
+
+/* les grandes bandes photo respirent aussi */
+.bande img{transition:transform 1.1s cubic-bezier(.2,.7,.3,1)}
+.bande:hover img{transform:scale(1.05)}
+
+a,button{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important}
+}
+
+/* ---------- responsive ---------- */
+@media(max-width:1000px){
+  .trio{grid-template-columns:1fr;grid-template-rows:repeat(3,1fr)}
+  .pan__in{padding:20px 20px 22px}
+  .pan h2{font-size:25px}
+  .pan p{font-size:14.5px;margin-bottom:12px}
+  .marque img{height:36px}
+  .familles,.maisons{grid-template-columns:repeat(2,1fr)}
+  .duo,.recap{grid-template-columns:1fr;gap:32px}
+  .valeurs{grid-template-columns:repeat(2,1fr)}
+  .cartes,.zones,.faits,.rej,.fil,.dixans{grid-template-columns:1fr}
+  .dixans{padding:32px 26px;gap:26px;text-align:center}
+  .dixans>div:last-child{text-align:left}
+  .gamme,.biblio{grid-template-columns:repeat(2,1fr)}
+  .heritage{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}
+  .hcell--large{grid-column:span 2;grid-row:span 1;grid-auto-rows:220px}
+  .fgrid{grid-template-columns:1fr 1fr}
+  nav{display:none}
+  nav.ouvert{display:flex;position:absolute;top:68px;left:0;right:0;background:var(--encre);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 18px;border-bottom:1px solid #1E3550}
+  nav.ouvert a{padding:13px 0;border-bottom:1px solid #1E3550}
+  nav.ouvert .btn{margin-top:12px}
+  .burger{display:block}
+  .logo img{height:48px}
+  .bar{height:68px}
+  .contre{grid-template-columns:1fr}
+  .bande::after{background:linear-gradient(180deg,rgba(11,26,43,.74) 0%,rgba(11,26,43,.95) 100%)}
+  section{padding:56px 0}
+  .fab span{display:none}
+  .fab{padding:16px;border-radius:50%}
+}
+@media(max-width:560px){
+  .familles,.maisons,.valeurs,.fgrid,.gamme,.biblio,.heritage{grid-template-columns:1fr}
+  .hcell--large{grid-column:span 1}
+}
+
+/* =========================================================
+   MOBILE : navigation, banniere, galerie
+   ========================================================= */
+@media(max-width:1000px){
+
+  /* le menu reste visible en permanence, on ne se perd plus */
+  body{padding-top:64px}
+  header{transform:none !important}
+  .bar{height:64px;gap:12px}
+  .logo img{height:44px}
+  .burger{display:flex;align-items:center;justify-content:center;width:46px;height:46px;
+    font-size:20px;border-color:rgba(255,255,255,.28)}
+  nav.ouvert{top:64px;max-height:calc(100vh - 64px);overflow-y:auto}
+  nav.ouvert a{padding:15px 2px;font-size:16.5px}
+
+  /* la banniere : plus de logo geant par-dessus les panneaux */
+  .banniere{height:auto;min-height:0}
+  .banniere::after{display:none}
+  .marque{position:static;transform:none;padding:16px 20px 12px;
+    display:flex;justify-content:center;perspective:900px}
+  .marque img{height:74px}
+  .trio{height:auto;grid-template-columns:1fr;grid-template-rows:none;gap:2px}
+  .pan{min-height:0;height:29vh;min-height:186px}
+  .pan__in{padding:16px 18px 18px}
+  .pan__tag{margin-bottom:8px;font-size:10.5px;padding:4px 9px}
+  .pan h2{font-size:22px;margin-bottom:4px}
+  .pan p{font-size:13.5px;margin-bottom:9px;max-width:none;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .pan__go{font-size:13.5px}
+
+  /* le rail de navigation revient, en plus discret */
+  .fleches{display:flex !important;right:10px;padding:5px 4px;gap:1px}
+  .fl{width:34px;height:34px}
+  .fl svg{width:16px;height:16px}
+  .fleches.visible{opacity:.88}
+
+  /* la galerie tient enfin dans l ecran */
+  .gal{padding:0}
+  .gal__box{border-radius:0;min-height:100vh;max-width:none}
+  .gal__hd{padding:14px 16px;gap:12px}
+  .gal__hd h3{font-size:18px}
+  .gal__hd p{font-size:12.5px}
+  .gal__x{width:46px;height:46px;font-size:26px}
+  .gal__grid{grid-template-columns:repeat(2,1fr);gap:9px;padding:14px 16px}
+  .gal__grid img{padding:5px}
+  .gal__ft{padding:0 16px 26px;font-size:13px}
+}
+
+@media(max-width:560px){
+  .fleches{display:flex !important;right:8px}
+  .fl{width:31px;height:31px}
+  .pan{height:26vh;min-height:168px}
+  .marque img{height:62px}
+  .gal__grid{grid-template-columns:repeat(2,1fr);gap:8px;padding:12px}
+}
+
+/* ecrans bas : on evite que la banniere depasse trop */
+@media(max-width:1000px) and (max-height:700px){
+  .pan{height:auto;min-height:150px}
+  .marque img{height:56px}
+}
+
+
+/* barre de progression et rubrique en cours */
+.jauge{position:absolute;left:0;bottom:-1px;height:3px;width:0;z-index:2;
+  background:linear-gradient(90deg,rgba(255,255,255,.45),#fff);
+  box-shadow:0 0 10px rgba(255,255,255,.55);transition:width .12s linear}
+nav a.actif{color:#fff;font-weight:700;position:relative}
+nav a.actif::after{content:"";position:absolute;left:0;right:0;bottom:-7px;height:2px;
+  background:var(--orange);border-radius:2px}
+@media(max-width:1000px){
+  nav.ouvert a.actif{color:var(--orange)}
+  nav.ouvert a.actif::after{display:none}
+  nav.ouvert a.actif::before{content:"\203A  ";color:var(--orange);font-weight:700}
+}
+
+/* =========================================================
+   LARGEUR : rien ne doit jamais elargir la page
+   ========================================================= */
+html,body{max-width:100%;overflow-x:hidden;overscroll-behavior-x:contain}
+/* dans une grille, un enfant s'elargit par defaut au contenu : on l'interdit */
+.duo>*,.calcbloc>*,.recap>*,.cartes>*,.zones>*,.rej>*,.gamme>*,.familles>*,
+.maisons>*,.fil>*,.faits>*,.inv>*,.heritage>*,.biblio>*,.valeurs>*{min-width:0}
+.tbl-scroll{max-width:100%}
+.tbl-scroll table{min-width:0}
+
+/* le tableau des prix devient une liste de cartes sur petit ecran */
+@media(max-width:760px){
+  .tbl-scroll{overflow:visible}
+  .tbl,.tbl thead{display:block;min-width:0;box-shadow:none;background:transparent}
+  .tbl thead{display:none}
+  .tbl tbody{display:block}
+  .tbl tbody tr{display:block;background:#fff;border:1px solid var(--ligne);border-radius:12px;
+    padding:14px 16px;margin-bottom:12px;box-shadow:0 3px 12px rgba(11,26,43,.07)}
+  .tbl tbody tr:nth-child(even){background:#fff}
+  .tbl tbody td{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+    padding:8px 0;border-bottom:1px dashed var(--ligne);text-align:left}
+  .tbl tbody td:first-child{font-family:var(--display);font-weight:700;font-size:17px;
+    border-bottom:2px solid var(--bleu);padding-bottom:10px;margin-bottom:4px;display:block}
+  .tbl tbody td:last-child{border-bottom:0}
+  .tbl tbody td.num{text-align:right}
+  .tbl tbody td.num::before{content:attr(data-tier);font-family:var(--sans);font-weight:400;
+    font-size:14px;color:var(--gris);white-space:nowrap}
+}
+
+
+/* =========================================================
+   MENU PERMANENT SUR TELEPHONE
+   ========================================================= */
+@media(max-width:1000px){
+  body{padding-top:104px}
+  .burger{display:none !important}
+  .bar{flex-wrap:wrap;height:auto;padding-top:9px;padding-bottom:0;gap:10px;align-items:center}
+  .logo{order:1}
+  .logo img{height:42px}
+  .bar .btn-wa{order:2;margin-left:auto;padding:9px 15px;font-size:14px}
+
+  /* la barre de rubriques, qui defile au doigt */
+  nav{display:flex !important;order:3;position:static;width:100%;margin:0;
+    background:none;border:0;padding:0 0 0 0;gap:0;
+    overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;-ms-overflow-style:none;
+    border-top:1px solid #1E3550;margin-top:7px}
+  nav::-webkit-scrollbar{display:none}
+  nav a{flex:0 0 auto;padding:12px 13px;font-size:14px;white-space:nowrap;border:0;
+    color:#AEBECE;font-weight:600}
+  nav a:first-child{padding-left:20px}
+  nav a:last-child{padding-right:20px}
+  nav a.actif{color:#fff}
+  nav a.actif::after{bottom:0;left:13px;right:13px;height:3px}
+  nav .btn-wa{display:none}          /* deja en haut a droite */
+
+  /* la banniere repart sous le menu */
+  .banniere{height:auto}
+  .marque{position:absolute;top:37%;left:50%;transform:translate(-50%,-50%);padding:0;z-index:11;pointer-events:none}
+  .marque img{height:40px;border-radius:9px;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+  .banniere::after{display:block}
+  .trio{grid-template-rows:none}
+  .pan{height:auto;min-height:206px}
+  .pan__in{padding:15px 17px 17px}
+  .pan__tag{margin-bottom:7px}
+  .pan h2{font-size:21px}
+  .pan p{font-size:13px;-webkit-line-clamp:2;margin-bottom:8px}
+}
+@media(max-width:560px){
+  body{padding-top:100px}
+  .marque img{height:52px}
+  .pan{min-height:196px}
+  nav a{padding:11px 11px;font-size:13.5px}
+}
+@media(max-width:1000px) and (max-height:680px){
+  .pan{min-height:168px}
+  .marque img{height:32px}
+}
+
+
+/* =========================================================
+   GLISSER DU DOIGT POUR CHANGER DE RUBRIQUE
+   ========================================================= */
+.bulle{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%) scale(.86);z-index:95;
+  background:rgba(11,26,43,.93);color:#fff;border:1px solid rgba(255,255,255,.16);
+  padding:15px 26px;border-radius:999px;font-family:var(--display);font-weight:700;font-size:17px;
+  display:flex;align-items:center;gap:11px;white-space:nowrap;pointer-events:none;
+  box-shadow:0 14px 40px rgba(0,0,0,.4);opacity:0;visibility:hidden;
+  transition:opacity .22s,transform .28s cubic-bezier(.2,.9,.3,1.4),visibility .22s}
+.bulle.vue{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+.bulle svg{width:19px;height:19px;color:var(--orange);flex-shrink:0}
+.bulle .rang{font-family:var(--sans);font-weight:500;font-size:13.5px;color:#8FA4B8}
+@media(min-width:1001px){.bulle{display:none}}
+
+
+/* le voile qui rend les longs sauts instantanes et propres */
+.voile{position:fixed;left:0;top:0;right:0;bottom:0;z-index:90;background:var(--papier);
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .13s linear,visibility .13s linear}
+.voile.vu{opacity:1;visibility:visible}
+@media (prefers-reduced-motion: reduce){.voile{transition:none}}
+
+
+/* Android declenche son propre retour en arriere sur un glissement horizontal.
+   On lui interdit de traiter l horizontale, les zones qui defilent la gardent. */
+body{touch-action:pan-y pinch-zoom}
+#nav,.gal,.tbl-scroll,.fleches{touch-action:auto}
+
+
+/* =========================================================
+   ORDINATEUR : le menu reste affiche en haut, comme sur telephone
+   ========================================================= */
+@media(min-width:1001px){
+  header{transform:none !important}
+  body{padding-top:77px}
+  .banniere{height:calc(100vh - 77px);height:calc(100svh - 77px)}
+}
+
+
+/* le bouton a trois traits reste discret : verre translucide, pas un gros cadre */
+.burger{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);
+  color:rgba(255,255,255,.86);border-radius:10px;font-size:15px;line-height:1;
+  width:38px;height:38px;padding:0;backdrop-filter:blur(6px);
+  transition:background .18s,border-color .18s,color .18s}
+.burger:hover,.burger:focus-visible{background:rgba(255,255,255,.14);
+  border-color:rgba(255,155,0,.55);color:#fff;outline:none}
+
+
+/* ---------- la porte des professionnels du batiment ---------- */
+.pros{margin-top:52px;padding:38px 34px;border-radius:16px;
+  background:var(--sable);border:1px solid var(--ligne)}
+.pros .kicker{margin-bottom:9px}
+.pros h3{font-family:var(--display);font-weight:700;font-size:clamp(22px,3.2vw,30px);
+  line-height:1.18;margin-bottom:14px;text-wrap:balance}
+.pros .chapo{margin-bottom:0;max-width:64ch}
+.pros .zone{background:var(--papier)}
+@media(max-width:1000px){.pros{padding:26px 20px;margin-top:38px}}
+
+
+/* ---------- d ou viennent les materiaux ---------- */
+.fournisseurs{margin-top:34px;padding:34px 32px;border-radius:16px;
+  background:var(--papier);border:1px solid var(--ligne)}
+.fournisseurs .kicker{margin-bottom:9px}
+.fournisseurs h3{font-family:var(--display);font-weight:700;font-size:clamp(20px,2.9vw,27px);
+  line-height:1.2;margin-bottom:13px;text-wrap:balance}
+.fournisseurs .chapo{margin-bottom:0;max-width:64ch}
+.fseurs{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}
+.fseur{border-top:2px solid var(--bleu);padding-top:14px}
+.fseur:nth-child(2){border-top-color:var(--orange)}
+.fseur:nth-child(3){border-top-color:var(--bleu-fonce)}
+.fseur:nth-child(4){border-top-color:var(--orange-fonce)}
+.fseur h4{font-size:16px;margin-bottom:7px}
+.fseur p{font-size:15px;color:var(--gris);margin:0}
+.fseur b{color:var(--encre);font-weight:600}
+@media(max-width:760px){.fseurs{grid-template-columns:1fr;gap:18px}
+  .fournisseurs{padding:24px 19px}}
+
+
+/* le voile etant plus clair, le texte porte sa propre ombre pour rester lisible */
+.pan__in h2,.pan__in p,.pan__go{text-shadow:0 2px 14px rgba(4,16,28,.92),0 1px 4px rgba(4,16,28,.85)}
+.pan__tag{box-shadow:0 4px 16px rgba(4,16,28,.45)}
+
+
+/* ---------- apparition douce au defilement ----------
+   La classe est posee par le script, jamais dans le HTML : si le script
+   ne tourne pas, tout reste visible. On n anime que l opacite et le
+   deplacement, les deux seules proprietes qui ne coutent rien au telephone. */
+@media (prefers-reduced-motion: no-preference){
+  .revele{opacity:0;transform:translateY(20px);
+    transition:opacity .6s cubic-bezier(.2,.7,.3,1),transform .6s cubic-bezier(.2,.7,.3,1)}
+  .revele.vu{opacity:1;transform:none}
+}
+/* ---------- reponse au doigt ----------
+   Sur telephone, l element s enfonce legerement quand on le touche. */
+@media (hover:none){
+  .fam:active,.prod:active,.mai:active,.zone:active,.carte:active,
+  .rejc:active,.valeur:active,.biblio figure:active{
+    transform:scale(.976);transition:transform .13s ease-out}
+}
+
+
+/* ---------- les marques que nous distribuons ----------
+   Traitement monochrome pour que six logos d origines differentes
+   forment un ensemble, et non un patchwork. */
+.marques{padding-bottom:38px;margin-bottom:34px;border-bottom:1px solid #1E3550}
+.marques__t{font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:#8FA4B8;font-weight:700;margin-bottom:22px}
+.marques ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;
+  align-items:center;gap:38px 52px}
+.marques li{display:flex;align-items:center}
+.marques img{height:38px;width:auto;max-width:190px;object-fit:contain;
+  filter:brightness(0) invert(1);opacity:.62;
+  transition:opacity .25s,filter .25s}
+.marques li:hover img,.marques li:focus-within img{opacity:1}
+.marques__n{margin-top:24px;font-size:13px;color:#6E8298;max-width:70ch}
+@media(max-width:760px){
+  .marques ul{gap:26px 34px}
+  .marques img{height:30px;max-width:140px}
+  .marques{padding-bottom:28px;margin-bottom:26px}
+}
+@media(prefers-reduced-motion:reduce){.marques img{transition:none}}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#haut"><img src="images/logo.jpg" alt="MIENYAKWAISO ANWANZE SARL, Nyakwaï"></a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">☰</button>
+    <nav id="nav">
+      <a href="#apropos">Qui sommes-nous</a>
+      <a href="#quincaillerie">Quincaillerie</a>
+      <a href="#gamme">Terre cuite</a>
+      <a href="#btp">BTP</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#rejoindre">Nous rejoindre</a>
+      <a class="btn btn-wa btn-sm" href="https://wa.me/2250585794969" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ BANNIÈRE : le logo et les trois métiers, rien d'autre ============ -->
+<div class="banniere" id="haut">
+  <div class="marque"><img src="images/logo.jpg" alt="Logo MIENYAKWAISO ANWANZE SARL, Nyakwaï"></div>
+  <div class="trio">
+
+    <a class="pan" href="#quincaillerie">
+      <img src="images/catalogue/ciment/ciment-tien-01.jpg" alt="Le stock de ciment du magasin de Toumodi, empilé sur plusieurs rangées">
+      <div class="pan__in">
+        <span class="pan__tag tag-ok">Ouvert aujourd'hui</span>
+        <h2>Quincaillerie</h2>
+        <p>Ciment, fer à béton, tôles, peinture, carrelage, plomberie, électricité.</p>
+        <span class="pan__go">Voir le catalogue <i>→</i></span>
+      </div>
+    </a>
+
+    <a class="pan" href="#briques">
+      <img src="images/hero-briques.jpg" alt="Mur en briques de parement de terre cuite, courbes lumineuses au soleil">
+      <div class="pan__in">
+        <span class="pan__tag tag-pre">Précommande</span>
+        <h2>Briques de terre cuite</h2>
+        <p>Brique pleine, brique perforée, plaquette de parement. Production à Toumodi.</p>
+        <span class="pan__go">Calculer mon besoin <i>→</i></span>
+      </div>
+    </a>
+
+    <a class="pan" href="#btp">
+      <img src="images/hero-btp.jpg" alt="Ouvrier en casque de sécurité sur un chantier de construction">
+      <div class="pan__in">
+        <span class="pan__tag tag-ok">Sur devis</span>
+        <h2>Construction, BTP</h2>
+        <p>Plans, suivi de chantier, contrat clé en main, travaux routiers et hydrauliques.</p>
+        <span class="pan__go">Demander un devis <i>→</i></span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<div class="promesse">
+  <div class="wrap">
+    <ul><li>Intégrité</li><li>Proximité</li><li>Adaptabilité</li><li>Célérité</li></ul>
+  </div>
+</div>
+
+<!-- ============ QUI SOMMES-NOUS ============ -->
+<section id="apropos">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <p class="kicker">Qui nous sommes</p>
+        <h2 class="titre">Une société, trois métiers, une seule personne à qui parler.</h2>
+        <p class="txt">
+          Qui ne s'est jamais plaint d'avoir acheté un matériau de mauvaise qualité ? Qui n'a jamais eu affaire
+          à un ouvrier dont la prestation l'a catastrophé ? Qui n'a jamais confié un projet immobilier à un
+          proche, pour se sentir grugé au bout du compte ?
+        </p>
+        <p class="txt">
+          C'est de ce constat qu'est née <strong>MIENYAKWAISO ANWANZE SARL</strong> en septembre 2016, à Toumodi.
+          Le matériau sans l'ouvrier ne donne rien. L'ouvrier sans le matériau non plus. Nous avons donc réuni
+          <strong>la quincaillerie</strong> et <strong>la prestation BTP</strong> sous une seule responsabilité.
+        </p>
+        <p class="txt">
+          Aujourd'hui, un troisième métier s'ajoute aux deux autres : <strong>la production de briques de terre
+          cuite</strong>. Ce n'est pas une diversification opportuniste. Le dérèglement climatique nous oblige
+          à revenir aux fondamentaux. Bâtir avec la terre que nous avons sous les pieds, plutôt qu'avec des
+          matériaux qui traversent la planète, c'est préserver l'écosystème et l'environnement. Pas seulement
+          pour nous, mais pour les générations qui viennent après nous.
+        </p>
+        <blockquote class="citation">
+          « Convaincus qu'en chaque individu est enfouie une parcelle de divinité, il est temps de la révéler
+          en faveur de la construction d'un monde où chaque être vivant pourra vivre dignement dans un habitat sain. »
+          <cite>Le directeur général</cite>
+        </blockquote>
+      </div>
+      <div><span class="zoom"><img src="images/facade-valeurs.jpg" alt="La façade de MIENYAKWAISO ANWANZE à Toumodi, avec les quatre valeurs de la société inscrites sur la vitre"></span></div>
+    </div>
+
+    <div class="valeurs">
+      <div class="valeur"><h4>Intégrité</h4><p>Le prix annoncé est le prix payé. Le transport est chiffré à part, jamais dissimulé dans une marge.</p></div>
+      <div class="valeur"><h4>Proximité</h4><p>Un magasin physique à Toumodi, rue du Commerce. Une adresse, une porte, des visages.</p></div>
+      <div class="valeur"><h4>Adaptabilité</h4><p>Livraison partielle ou totale, selon l'avancement de votre chantier et votre trésorerie.</p></div>
+      <div class="valeur"><h4>Célérité</h4><p>Un planning respecté. Un projet retardé est un projet qui finit par mourir.</p></div>
+    </div>
+
+    <div class="dixans">
+      <div class="dixans__n">
+        <b>10</b>
+        <span>ans</span>
+        <em>2016 · 2026</em>
+      </div>
+      <div>
+        <h3>Dix ans que nous ouvrons le matin.</h3>
+        <p>
+          Nous ne prétendrons pas que ces dix années ont été faciles. Il y a eu des saisons dures,
+          des chantiers qui ont mal tourné, des années où il a fallu serrer. Beaucoup d'entreprises
+          nées la même année que nous ont fermé depuis.
+        </p>
+        <p>
+          <strong>Nous sommes toujours là.</strong> C'est la seule chose qu'un concurrent ne peut pas
+          copier et qu'un client ne peut pas acheter : la durée. Une adresse qui n'a pas bougé,
+          une équipe qu'on peut venir voir, et un nom qui répond encore au téléphone dix ans après.
+        </p>
+        <p>
+          Et nous comptons y rester. Pas cinq ans de plus : <strong>durablement</strong>. Parce qu'une
+          maison se bâtit pour les petits-enfants, et qu'un fournisseur qui disparaît ne vaut rien.
+        </p>
+        <p>
+          C'est tout ce que veulent dire nos quatre valeurs. Ce n'est pas un slogan d'affiche.
+          <strong>Ce sont les règles qui nous ont permis de tenir.</strong> Elles nous viennent d'ici,
+          de ce que nos aînés appelaient tenir sa parole.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUINCAILLERIE ============ -->
+<section id="quincaillerie" class="sec-clair">
+  <div class="wrap">
+    <p class="kicker">Métier 1 · Disponible aujourd'hui</p>
+    <h2 class="titre">La quincaillerie</h2>
+    <p class="chapo">
+      Le magasin de Toumodi est ouvert et approvisionné. Vous n'avez pas besoin de vous déplacer :
+      envoyez votre liste sur WhatsApp, nous chiffrons, puis nous livrons.
+    </p>
+
+    <div class="familles">
+      <button class="fam" type="button" data-fam="ciment">
+        <div class="fam__ph"><img src="images/catalogue/ciment/ciment-06.jpg" alt="Ciment" loading="lazy"><span class="fam__cpt">2 photos</span></div>
+        <div class="fam__txt"><h4>Ciment</h4><p>CPJ 32,5 N · CPJ 42,5 N et R · CPA 42,5 N et R</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="fer-a-beton">
+        <div class="fam__ph"><img src="images/catalogue/fer-a-beton/fer-a-beton-tien-9.jpg" alt="Fer à béton" loading="lazy"><span class="fam__cpt">9 photos</span></div>
+        <div class="fam__txt"><h4>Fer à béton</h4><p>Diamètres 6, 8, 10, 12, 14, 16, 18, 20, 25, 32</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="toles">
+        <div class="fam__ph"><img src="images/catalogue/toles/toles-tien-16.jpg" alt="Tôles de couverture" loading="lazy"><span class="fam__cpt">8 photos</span></div>
+        <div class="fam__txt"><h4>Tôles de couverture</h4><p>Bac aluminium, ondulée aluzinc prélaquée, métal tuile, plancher collaborant</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="peinture">
+        <div class="fam__ph"><img src="images/catalogue/peinture/peinture-01.jpg" alt="Peinture" loading="lazy"><span class="fam__cpt">5 photos</span></div>
+        <div class="fam__txt"><h4>Peinture</h4><p>Vinylique, acrylique, glycéro</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="carrelage">
+        <div class="fam__ph"><img src="images/catalogue/carrelage/carrelage-tien-159.jpg" alt="Carrelage" loading="lazy"><span class="fam__cpt">11 photos</span></div>
+        <div class="fam__txt"><h4>Carrelage</h4><p>Sol et mur, du 40×40 au 60×120</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="plomberie">
+        <div class="fam__ph"><img src="images/catalogue/plomberie/plomberie-01.jpg" alt="Plomberie et sanitaire" loading="lazy"><span class="fam__cpt">6 photos</span></div>
+        <div class="fam__txt"><h4>Plomberie et sanitaire</h4><p>Raccords PPR et PVC, WC, douches, lavabos</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="electricite">
+        <div class="fam__ph"><img src="images/catalogue/electricite/electricite-01.jpg" alt="Électricité" loading="lazy"><span class="fam__cpt">5 photos</span></div>
+        <div class="fam__txt"><h4>Électricité</h4><p>Câblerie, appareillage, disjoncteurs, coffrets</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="luminaire">
+        <div class="fam__ph"><img src="images/catalogue/luminaire/luminaire-01.jpg" alt="Luminaire" loading="lazy"><span class="fam__cpt">5 photos</span></div>
+        <div class="fam__txt"><h4>Luminaire</h4><p>Suspensions, spots, réglettes, dalles LED</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="ferronnerie">
+        <div class="fam__ph"><img src="images/catalogue/ferronnerie/ferronnerie-tien-28.jpg" alt="Ferronnerie" loading="lazy"><span class="fam__cpt">8 photos</span></div>
+        <div class="fam__txt"><h4>Ferronnerie</h4><p>Tube carré, rectangle et rond, fer plat, cornière, TPN et TPG</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="charpenterie">
+        <div class="fam__ph"><img src="images/catalogue/charpenterie/charpenterie-01.jpg" alt="Charpenterie" loading="lazy"><span class="fam__cpt">6 photos</span></div>
+        <div class="fam__txt"><h4>Charpenterie</h4><p>Pannes Z et Sigma, profilés placo, profilés H</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="tuyauterie">
+        <div class="fam__ph"><img src="images/catalogue/tuyauterie/tuyauterie-tien-129.jpg" alt="Tuyauterie PVC" loading="lazy"><span class="fam__cpt">5 photos</span></div>
+        <div class="fam__txt"><h4>Tuyauterie PVC</h4><p>Tubes et raccords évacuation et pression</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="robinetterie">
+        <div class="fam__ph"><img src="images/catalogue/robinetterie/robinetterie-01.jpg" alt="Robinetterie" loading="lazy"><span class="fam__cpt">5 photos</span></div>
+        <div class="fam__txt"><h4>Robinetterie</h4><p>Mitigeurs lavabo, évier, colonnes de douche</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="lambris">
+        <div class="fam__ph"><img src="images/catalogue/lambris/lambris-tien-135.jpg" alt="Lambris PVC" loading="lazy"><span class="fam__cpt">8 photos</span></div>
+        <div class="fam__txt"><h4>Lambris PVC</h4><p>Habillage plafond et mur, coloris bois et unis</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="contreplaque">
+        <div class="fam__ph"><img src="images/catalogue/contreplaque/contreplaque-01.jpg" alt="Panneaux contreplaqués" loading="lazy"><span class="fam__cpt">7 photos</span></div>
+        <div class="fam__txt"><h4>Panneaux contreplaqués</h4><p>Coffrage et menuiserie</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="serrurerie">
+        <div class="fam__ph"><img src="images/catalogue/serrurerie/serrurerie-01.jpg" alt="Serrurerie" loading="lazy"><span class="fam__cpt">5 photos</span></div>
+        <div class="fam__txt"><h4>Serrurerie</h4><p>Serrures, béquilles, paumelles, verrous</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+      <button class="fam" type="button" data-fam="accessoires">
+        <div class="fam__ph"><img src="images/catalogue/accessoires/accessoires-tien-66.jpg" alt="Accessoires" loading="lazy"><span class="fam__cpt">7 photos</span></div>
+        <div class="fam__txt"><h4>Accessoires</h4><p>Pointes, fil recuit et galva, tiges filetées, tirefonds, faîtières, brouettes</p><span class="fam__voir">Voir les produits <i>→</i></span></div>
+      </button>
+    </div>
+
+    <p class="note">
+      Cette liste couvre les familles tenues en magasin. Un article absent du rayon peut être commandé :
+      demandez, nous vous donnons le délai et le prix avant que vous n'engagiez quoi que ce soit.
+    </p>
+
+    <div class="pros">
+      <p class="kicker">Vous n'êtes pas un particulier</p>
+      <h3>Ce que nous tenons pour les chantiers</h3>
+      <p class="chapo">
+        Une partie de notre stock ne s'adresse pas au détail. Ce sont des produits de structure,
+        que nous tenons parce que nous suivons nous-mêmes des chantiers.
+      </p>
+
+      <div class="zones" style="margin-top:32px">
+        <div class="zone">
+          <p class="delai">Ossature</p>
+          <h4>Charpente métallique</h4>
+          <p>Pannes Z et Sigma, profilés H, profilés placo. Tube carré, rectangle et rond,
+          fer plat, cornière, TPN et TPG.</p>
+        </div>
+        <div class="zone">
+          <p class="delai">Plancher</p>
+          <h4>Plancher collaborant</h4>
+          <p>La tôle nervurée qui sert de coffrage perdu et travaille avec le béton.
+          Avec le fer à béton du diamètre 6 au diamètre 32.</p>
+        </div>
+        <div class="zone">
+          <p class="delai">Couverture</p>
+          <h4>Tôles de chantier</h4>
+          <p>Bac aluminium standard, ondulée aluzinc prélaquée, métal tuile texturée.
+          Avec faîtières, tirefonds, cavaliers et tiges filetées.</p>
+        </div>
+      </div>
+
+      <p class="note" style="margin-top:26px">
+        Envoyez votre quantitatif, même en photo d'un carnet. Nous chiffrons, nous vous disons
+        ce que nous avons en stock et ce qu'il faut commander, avec le délai. Facture au nom de la
+        société, RCCM CI-TDI-2016-B-570.
+      </p>
+
+      <div style="margin-top:24px">
+        <a class="btn btn-bleu" href="https://wa.me/2250585794969?text=Bonjour%2C%20je%20suis%20un%20professionnel%20du%20b%C3%A2timent.%20Voici%20mon%20quantitatif%20%3A" target="_blank" rel="noopener">Envoyer mon quantitatif</a>
+      </div>
+    </div>
+
+    <div class="fournisseurs">
+      <p class="kicker">D'où viennent les matériaux</p>
+      <h3>Nous ne fabriquons pas ce que nous vendons en quincaillerie.</h3>
+      <p class="chapo">
+        Nous l'achetons chez des industriels, pour la plupart installés en Côte d'Ivoire.
+        Voici lesquels, pour que vous puissiez vérifier par vous-même.
+      </p>
+
+      <div class="fseurs">
+        <div class="fseur">
+          <h4>Ciment</h4>
+          <p><b>CIMAF</b>, Ciments de l'Afrique, usines à Vridi, Bouaké et San-Pédro.
+          <b>BIGCIM</b>, Société de Ciment de Côte d'Ivoire. <b>LIMAK Afrika</b>, usine de PK24
+          au nord d'Abidjan.</p>
+        </div>
+        <div class="fseur">
+          <h4>Acier et couverture</h4>
+          <p><b>Universelle Industries</b>, à Yopougon. Fer à béton, pointes, tôles aluzinc et
+          aluminium, cornières, fers plats, pannes Z et Sigma, plancher collaborant, profilés placo.
+          Sa tôle <b>Supertôle</b> est certifiée par CODINORM selon la norme NI 323.</p>
+        </div>
+        <div class="fseur">
+          <h4>Tubes</h4>
+          <p><b>SOTACI</b>, Société des Tubes d'Acier et d'Aluminium de Côte d'Ivoire,
+          en activité depuis 1978, certifiée ISO 9001 version 2015.</p>
+        </div>
+        <div class="fseur">
+          <h4>Peinture</h4>
+          <p><b>SIPPEC</b>, Société Industrielle de Produits Plastiques et Chimiques,
+          usine de Yopougon.</p>
+        </div>
+      </div>
+
+      <p class="note" style="margin-top:26px">
+        Ces certifications sont celles de nos fournisseurs, pas les nôtres. Nos propres briques de
+        terre cuite ne sont pas encore testées, et nous l'écrivons noir sur blanc :
+        <a href="#gamme">voir ce que nous ne prétendons pas</a>.
+      </p>
+    </div>
+
+    <div style="margin-top:32px;display:flex;gap:13px;flex-wrap:wrap">
+      <a class="btn btn-bleu" href="https://wa.me/2250585794969?text=Bonjour%2C%20je%20souhaite%20un%20devis%20quincaillerie.%20Voici%20ma%20liste%20%3A" target="_blank" rel="noopener">Envoyer ma liste sur WhatsApp</a>
+      <a class="btn btn-ghost" href="#livraison">Où livrez-vous ?</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRIQUES ============ -->
+<section id="briques" class="sec-encre sec-photo">
+  <div class="fond"><img src="images/fond-briques.jpg" alt="" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Métier 2</p>
+    <h2 class="titre">Les briques de terre cuite</h2>
+    <p class="chapo">
+      L'usine se monte à Toumodi, en bordure de l'autoroute A3. Voici les prix et le calcul, pour que vous
+      puissiez décider avec des chiffres plutôt qu'avec des promesses.
+    </p>
+
+    <div class="duo" style="align-items:start">
+      <div>
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <thead>
+              <tr>
+                <th>Produit</th>
+                <th class="num">Détail<br><span style="font-weight:400;font-size:12px">moins de 500</span></th>
+                <th class="num">Demi-gros<br><span style="font-weight:400;font-size:12px">500 à 5 000</span></th>
+                <th class="num">Gros<br><span style="font-weight:400;font-size:12px">plus de 5 000</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Brique pleine ou perforée</td><td class="num" data-tier="Détail, moins de 500">500 F</td><td class="num" data-tier="Demi-gros, 500 à 5 000">450 F</td><td class="num" data-tier="Gros, plus de 5 000">400 F</td></tr>
+              <tr><td>Plaquette de parement</td><td class="num" data-tier="Détail, moins de 500">400 F</td><td class="num" data-tier="Demi-gros, 500 à 5 000">375 F</td><td class="num" data-tier="Gros, plus de 5 000">350 F</td></tr>
+              <tr><td>Second choix</td><td class="num" data-tier="Détail, moins de 500">250 F</td><td class="num" data-tier="Demi-gros, 500 à 5 000">220 F</td><td class="num" data-tier="Gros, plus de 5 000">200 F</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">
+          Prix unitaires en FCFA, hors transport. Le transport est calculé séparément et vous est montré
+          avant que vous ne payiez.
+        </p>
+        <div class="faits">
+          <div class="fait"><strong>48</strong><span>briques par m² de mur</span></div>
+          <div class="fait"><strong>12 à 15 000</strong><span>briques pour une maison courante</span></div>
+          <div class="fait"><strong>3,7 kg</strong><span>le poids d'une brique, base du calcul de transport</span></div>
+        </div>
+      </div>
+
+      <div class="calc">
+        <label for="m2">Surface de mur à monter</label>
+        <div class="calc-in">
+          <input id="m2" type="text" inputmode="numeric" value="80" aria-describedby="res">
+          <div class="unite">m²</div>
+        </div>
+        <ul class="lignes" id="res">
+          <li><span>Briques nécessaires</span><span id="r-b">3 840</span></li>
+          <li><span>Palier de prix</span><span id="r-p">demi-gros · 450 F</span></li>
+          <li><span>Poids à transporter</span><span id="r-kg">14,2 t</span></li>
+          <li class="total"><span>Briques</span><span id="r-tot">1 728 000 F</span></li>
+        </ul>
+        <p class="eur" id="r-eur">soit environ 2 634 €</p>
+        <a class="btn btn-wa" style="width:100%;margin-top:20px" id="r-wa" href="https://wa.me/2250585794969" target="_blank" rel="noopener">Envoyer ce calcul sur WhatsApp</a>
+        <p class="note" style="margin-top:14px">
+          Une brique pèse environ 3,7 kg, d'où le tonnage affiché. Le transport n'est pas chiffré ici :
+          le camion est affrété selon le tonnage et la fragilité du produit, et le coût vous est donné
+          en ligne séparée sur le devis. <a href="#livraison" style="color:var(--orange);text-decoration:underline">Voir comment nous livrons</a>.
+        </p>
+        <p class="note" style="margin-top:10px">
+          Estimation. Elle ne tient compte ni des ouvertures, ni du mortier, ni de la casse de chantier.
+          Un devis nominatif poste par poste vous est établi avant tout engagement.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAMME TERRE CUITE ============ -->
+<section id="gamme">
+  <div class="wrap">
+    <p class="kicker">La gamme</p>
+    <h2 class="titre">La terre cuite ne s'arrête pas à la brique.</h2>
+    <p class="chapo">
+      La même terre, la même cuisson, et huit produits qui couvrent le mur, le sol, la toiture et la façade.
+      Chaque ligne porte son statut. Ce qui n'est pas encore prêt est écrit comme tel.
+    </p>
+
+    <div class="gamme">
+      <article class="prod">
+        <span class="prod__st st-1">Commandable</span>
+        <div class="prod__ph"><img src="images/gamme/brique-pleine.jpg" alt="Briques de terre cuite pleines empilées" loading="lazy"></div>
+        <h4>Brique pleine</h4>
+        <p>Mur porteur, murs de clôture, ouvrages exposés. La plus dense de la gamme.</p>
+        <div class="px">500 / 450 / 400 F<small>détail · demi-gros · gros</small></div>
+      </article>
+
+      <article class="prod">
+        <span class="prod__st st-1">Commandable</span>
+        <div class="prod__ph"><img src="images/gamme/brique-perforee.jpg" alt="Blocs de terre cuite perforés posés sur fond clair" loading="lazy"></div>
+        <h4>Brique perforée</h4>
+        <p>Mur porteur allégé. Moins de matière, moins de poids au transport, meilleure isolation.</p>
+        <div class="px">500 / 450 / 400 F<small>détail · demi-gros · gros</small></div>
+      </article>
+
+      <article class="prod">
+        <span class="prod__st st-1">Commandable</span>
+        <div class="prod__ph"><img src="images/gamme/parement.jpg" alt="Mur habillé de plaquettes de parement en terre cuite" loading="lazy"></div>
+        <h4>Plaquette de parement</h4>
+        <p>Habillage de façade et de mur intérieur. Une façade qui n'a plus besoin d'enduit ni de peinture.</p>
+        <div class="px">400 / 375 / 350 F<small>détail · demi-gros · gros</small></div>
+      </article>
+
+      <article class="prod">
+        <span class="prod__st st-1">Commandable</span>
+        <div class="prod__ph"><img src="images/gamme/second-choix.jpg" alt="Tas de briques de second choix" loading="lazy"></div>
+        <h4>Second choix</h4>
+        <p>Briques hors calibre ou légèrement épaufrées. Pour les ouvrages non visibles et les remblais.</p>
+        <div class="px">250 / 220 / 200 F<small>détail · demi-gros · gros</small></div>
+      </article>
+
+      <article class="prod">
+        <span class="prod__st st-1">Commandable</span>
+        <div class="prod__ph"><img src="images/gamme/tuile.jpg" alt="Tuiles de terre cuite empilées" loading="lazy"></div>
+        <h4>Tuile de terre cuite</h4>
+        <p>Couverture. Elle remplace la tôle, ne chauffe pas la maison au soleil de midi et ne fait pas de bruit sous la pluie.</p>
+        <div class="px">Prix sur demande<small>nous confirmons le délai à la commande</small></div>
+      </article>
+
+      <article class="prod">
+        <span class="prod__st st-1">Commandable</span>
+        <div class="prod__ph"><img src="images/gamme/tomette.jpg" alt="Sol en tomettes de terre cuite posées en chevrons" loading="lazy"></div>
+        <h4>Tomette</h4>
+        <p>Sol intérieur et terrasse. Le carreau de terre cuite, froid sous le pied et qui vieillit bien.</p>
+        <div class="px">Prix sur demande<small>nous confirmons le délai à la commande</small></div>
+      </article>
+
+      <article class="prod">
+        <span class="prod__st st-1">Commandable</span>
+        <div class="prod__ph"><img src="images/gamme/claustra.jpg" alt="Claustra de terre cuite ajouré en façade" loading="lazy"></div>
+        <h4>Claustra et brise-soleil</h4>
+        <p>Le mur qui laisse passer l'air et arrête le soleil. L'élément le plus demandé sur les façades ivoiriennes.</p>
+        <div class="px">Prix sur demande<small>nous confirmons le délai à la commande</small></div>
+      </article>
+
+      <article class="prod">
+        <span class="prod__st st-1">Commandable</span>
+        <div class="prod__ph"><img src="images/gamme/hourdis.jpg" alt="Blocs de terre cuite stockés sur chantier" loading="lazy"></div>
+        <h4>Hourdis</h4>
+        <p>Entrevous de plancher. Il allège la dalle et remplace le hourdis béton, à volume égal.</p>
+        <div class="px">Prix sur demande<small>nous confirmons le délai à la commande</small></div>
+      </article>
+    </div>
+
+    <p class="note">
+      Toute la gamme se commande. L'extrudeuse produit la brique, le hourdis et le claustra ;
+      <strong>une presse a été commandée</strong> pour la tuile et la tomette. Vous passez commande,
+      nous vous confirmons dans la journée la quantité disponible, le délai réel et le prix ferme.
+      Vous ne payez qu'une fois d'accord sur ces trois points. Sur les formats les plus spécifiques,
+      un délai de production peut s'appliquer : nous vous le disons avant, jamais après.
+    </p>
+    <div style="margin-top:26px;display:flex;gap:13px;flex-wrap:wrap">
+      <a class="btn btn-orange" href="https://wa.me/2250585794969?text=Bonjour%2C%20je%20souhaite%20commander%20dans%20la%20gamme%20terre%20cuite.%20Produit%20%3A%20...%20Quantit%C3%A9%20%3A%20...%20Lieu%20de%20livraison%20%3A%20..." target="_blank" rel="noopener">Passer commande sur la gamme</a>
+      <a class="btn btn-ghost clignote" href="terre-cuite.html">Tout savoir sur la terre cuite</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BANDE PAREMENT ============ -->
+<div class="bande">
+  <img src="images/parement-mur.jpg" alt="Mur en briques de parement de terre cuite, appareillage soigné au soleil">
+  <div class="wrap">
+    <div class="box">
+      <p class="kicker">Le vrai débat</p>
+      <h2 class="titre" style="font-size:clamp(25px,3.6vw,36px)">Terre cuite ou parpaing ?</h2>
+      <p>Nous vendons les deux. Voici pourquoi nous croyons à la terre cuite, sans exagérer ce qu'elle fait.</p>
+      <div class="contre">
+        <div class="oui">
+          <h4>Ce que la terre cuite apporte</h4>
+          <p>Une paroi qui garde mieux la fraîcheur en pleine journée. Un matériau qui respire, donc moins
+          de condensation et de moisissures. Une matière première locale : une argile que nous extrayons nous-mêmes, dans nos carrières, et que nous cuisons sur place.
+          Et une façade en parement qui n'a plus besoin d'enduit ni de peinture.</p>
+        </div>
+        <div>
+          <h4>Ce que nous ne prétendrons pas</h4>
+          <p>Nous n'avons ni label, ni essai de laboratoire publié, ni bilan carbone certifié.
+          Les essais sur nos briques viendront après la première fournée. Tant que ce n'est pas fait,
+          nous ne l'écrirons pas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ BTP ============ -->
+<section id="btp" class="sec-clair">
+  <div class="wrap">
+    <p class="kicker">Métier 3 · Sur devis</p>
+    <h2 class="titre">La construction et les prestations BTP</h2>
+    <p class="chapo">
+      Un bureau d'études, des plans, un chantier suivi. Le département BTP est dirigé par un ingénieur
+      diplômé de l'ENSTP de Yamoussoukro.
+    </p>
+
+    <div class="duo" style="margin-bottom:44px">
+      <div><span class="zoom"><img src="images/architecte.jpg" alt="Architecte en casque de chantier lisant un plan à contre-jour"></span></div>
+      <div>
+        <h3 style="font-size:26px;margin-bottom:14px">Le plan avant la première brique</h3>
+        <p class="txt">
+          Rien ne part sur le terrain sans un plan validé et un métré chiffré. C'est ce qui sépare
+          un chantier qui tient son budget d'un chantier qui s'arrête au premier imprévu.
+        </p>
+        <p class="txt">
+          Notre bureau d'études établit les dossiers d'appel d'offres, dessine, quantifie et coordonne.
+          Il est dirigé par un ingénieur diplômé de l'ENSTP de Yamoussoukro.
+        </p>
+      </div>
+    </div>
+
+    <div class="cartes">
+      <div class="carte"><h4>Conception et plans</h4><p>Élaboration des dossiers d'appel d'offres, conception et réalisation des plans, métrés et quantitatifs.</p></div>
+      <div class="carte"><h4>Suivi de chantier</h4><p>Coordination des corps de métier, situation des travaux, sélection des ouvriers, contrat clé en main possible.</p></div>
+      <div class="carte"><h4>Travaux spécialisés</h4><p>Travaux routiers, travaux hydrauliques, lotissement. Matériel de terrassement mobilisé en sous-traitance.</p></div>
+    </div>
+
+    <div style="margin-top:40px;border-radius:12px;overflow:hidden;box-shadow:0 18px 44px rgba(11,26,43,.18)">
+      <span class="zoom"><img src="images/architectes-chantier.jpg" alt="Deux ingénieurs en casque examinent les plans sur le chantier"></span>
+    </div>
+
+    <h3 style="font-size:24px;margin:52px 0 8px">Comment vous payez</h3>
+    <p class="txt" style="max-width:660px;margin-bottom:30px">
+      Vous ne payez jamais la totalité d'avance. Chaque tranche est appelée quand l'étape précédente
+      est constatée, photos datées à l'appui.
+    </p>
+    <ol class="jalons">
+      <li><h4>Signature du devis <span class="pct">20 %</span></h4><p>Le devis est détaillé poste par poste. Vous savez ce que vous payez, ligne par ligne.</p></li>
+      <li><h4>Fondations terminées <span class="pct">20 %</span></h4><p>Photos datées du chantier avant tout appel de fonds.</p></li>
+      <li><h4>Élévation des murs <span class="pct">25 %</span></h4><p>Les briques sont posées, le niveau est constaté.</p></li>
+      <li><h4>Toiture et couverture <span class="pct">20 %</span></h4><p>Charpente et tôles en place, la maison est hors d'eau.</p></li>
+      <li><h4>Finitions et réception <span class="pct">15 %</span></h4><p>Le solde n'est appelé qu'à la réception, après votre validation.</p></li>
+    </ol>
+
+    <div style="margin-top:36px">
+      <a class="btn btn-bleu" href="https://wa.me/2250585794969?text=Bonjour%2C%20je%20souhaite%20un%20devis%20BTP." target="_blank" rel="noopener">Demander un devis chiffré</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHOISIR MA MAISON ============ -->
+<section id="maison">
+  <div class="wrap">
+    <p class="kicker">Pour la diaspora et les particuliers</p>
+    <h2 class="titre">Choisissez votre maison, voyez tout de suite ce que ça représente.</h2>
+    <p class="chapo">
+      Quatre formats courants. Cliquez sur celui qui vous ressemble, ajustez la surface, et vous voyez
+      immédiatement le nombre de briques et ce que représente le poste maçonnerie.
+    </p>
+    <p class="note" style="margin:-24px 0 30px">
+      <strong>Ces photographies sont des références d'architecture, pas nos réalisations.</strong>
+      Elles servent à situer le volume et le standing. Le petit plan sous chaque photo indique la
+      distribution type. Votre maison sera dessinée sur votre terrain, à partir de votre programme.
+    </p>
+
+    <div class="maisons" id="maisons">
+      <button class="mai" type="button" data-m2="55" data-nom="2 pièces" data-det="1 chambre, séjour, cuisine, 1 salle d'eau" aria-pressed="false">
+        <div class="mai__ph"><img src="images/maisons/m2.jpg" alt="Maison compacte à façade entièrement en briques de terre cuite" loading="lazy"></div>
+        <h4>2 pièces</h4>
+        <div class="m2">55 m²</div>
+        <div class="mai__bas">
+          <svg viewBox="0 0 200 132" role="img" aria-label="Plan schématique 2 pièces">
+            <rect x="6" y="6" width="188" height="120" fill="#fff" stroke="#14498C" stroke-width="3"/>
+            <line x1="118" y1="6" x2="118" y2="126" stroke="#14498C" stroke-width="2"/>
+            <line x1="118" y1="76" x2="194" y2="76" stroke="#14498C" stroke-width="2"/>
+            <line x1="6" y1="88" x2="118" y2="88" stroke="#14498C" stroke-width="2"/>
+            <text x="62" y="50" font-size="11" text-anchor="middle" fill="#56626F" font-family="sans-serif">SÉJOUR</text>
+            <text x="62" y="110" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">CUISINE</text>
+            <text x="156" y="45" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">CHAMBRE</text>
+            <text x="156" y="105" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">SDE</text>
+          </svg>
+          <p class="det">1 chambre, séjour, cuisine, 1 salle d'eau</p>
+        </div>
+      </button>
+      <button class="mai" type="button" data-m2="80" data-nom="3 pièces" data-det="2 chambres, séjour, cuisine, 1 salle d'eau" aria-pressed="false">
+        <div class="mai__ph"><img src="images/maisons/m3.jpg" alt="Maison a facade pleine brique de terre cuite, pignon a redents" loading="lazy"></div>
+        <h4>3 pièces</h4>
+        <div class="m2">80 m²</div>
+        <div class="mai__bas">
+          <svg viewBox="0 0 200 132" role="img" aria-label="Plan schématique 3 pièces">
+            <rect x="6" y="6" width="188" height="120" fill="#fff" stroke="#14498C" stroke-width="3"/>
+            <line x1="112" y1="6" x2="112" y2="126" stroke="#14498C" stroke-width="2"/>
+            <line x1="112" y1="66" x2="194" y2="66" stroke="#14498C" stroke-width="2"/>
+            <line x1="6" y1="94" x2="112" y2="94" stroke="#14498C" stroke-width="2"/>
+            <text x="59" y="52" font-size="11" text-anchor="middle" fill="#56626F" font-family="sans-serif">SÉJOUR</text>
+            <text x="59" y="113" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">CUISINE</text>
+            <text x="153" y="40" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 1</text>
+            <text x="153" y="100" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 2</text>
+          </svg>
+          <p class="det">2 chambres, séjour, cuisine, 1 salle d'eau</p>
+        </div>
+      </button>
+
+      <button class="mai" type="button" data-m2="110" data-nom="4 pièces" data-det="3 chambres, séjour, cuisine, 2 salles d'eau" aria-pressed="true">
+        <div class="mai__ph"><img src="images/maisons/m4.jpg" alt="Maison a etage a facade claire, sur jardin" loading="lazy"></div>
+        <h4>4 pièces</h4>
+        <div class="m2">110 m²</div>
+        <div class="mai__bas">
+          <svg viewBox="0 0 200 132" role="img" aria-label="Plan schématique 4 pièces">
+            <rect x="6" y="6" width="188" height="120" fill="#fff" stroke="#14498C" stroke-width="3"/>
+            <line x1="104" y1="6" x2="104" y2="126" stroke="#14498C" stroke-width="2"/>
+            <line x1="104" y1="46" x2="194" y2="46" stroke="#14498C" stroke-width="2"/>
+            <line x1="104" y1="86" x2="194" y2="86" stroke="#14498C" stroke-width="2"/>
+            <line x1="6" y1="90" x2="104" y2="90" stroke="#14498C" stroke-width="2"/>
+            <line x1="52" y1="90" x2="52" y2="126" stroke="#14498C" stroke-width="2"/>
+            <text x="55" y="52" font-size="11" text-anchor="middle" fill="#56626F" font-family="sans-serif">SÉJOUR</text>
+            <text x="29" y="111" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">CUIS.</text>
+            <text x="78" y="111" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">SDE</text>
+            <text x="149" y="30" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 1</text>
+            <text x="149" y="70" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 2</text>
+            <text x="149" y="110" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 3</text>
+          </svg>
+          <p class="det">3 chambres, séjour, cuisine, 2 salles d'eau</p>
+        </div>
+      </button>
+
+      <button class="mai" type="button" data-m2="140" data-nom="5 pièces" data-det="4 chambres, séjour, salle à manger, cuisine, 2 salles d'eau" aria-pressed="false">
+        <div class="mai__ph"><img src="images/maisons/m5.jpg" alt="Villa contemporaine a etage dans un lotissement arbore" loading="lazy"></div>
+        <h4>5 pièces</h4>
+        <div class="m2">140 m²</div>
+        <div class="mai__bas">
+          <svg viewBox="0 0 200 132" role="img" aria-label="Plan schématique 5 pièces">
+            <rect x="6" y="6" width="188" height="120" fill="#fff" stroke="#14498C" stroke-width="3"/>
+            <line x1="98" y1="6" x2="98" y2="126" stroke="#14498C" stroke-width="2"/>
+            <line x1="98" y1="36" x2="194" y2="36" stroke="#14498C" stroke-width="2"/>
+            <line x1="98" y1="66" x2="194" y2="66" stroke="#14498C" stroke-width="2"/>
+            <line x1="98" y1="96" x2="194" y2="96" stroke="#14498C" stroke-width="2"/>
+            <line x1="6" y1="62" x2="98" y2="62" stroke="#14498C" stroke-width="2"/>
+            <line x1="6" y1="96" x2="98" y2="96" stroke="#14498C" stroke-width="2"/>
+            <text x="52" y="38" font-size="10" text-anchor="middle" fill="#56626F" font-family="sans-serif">SÉJOUR</text>
+            <text x="52" y="84" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">SALLE À M.</text>
+            <text x="52" y="115" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">CUISINE</text>
+            <text x="146" y="25" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 1</text>
+            <text x="146" y="55" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 2</text>
+            <text x="146" y="85" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 3</text>
+            <text x="146" y="115" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 4</text>
+          </svg>
+          <p class="det">4 chambres, séjour, salle à manger, cuisine, 2 salles d'eau</p>
+        </div>
+      </button>
+
+      <button class="mai" type="button" data-m2="180" data-nom="6 pièces" data-det="5 chambres dont une suite, double séjour, cuisine, 3 salles d'eau" aria-pressed="false">
+        <div class="mai__ph"><img src="images/maisons/m6.jpg" alt="Villa de standing a etage, avec galerie et toiture debordante" loading="lazy"></div>
+        <h4>6 pièces</h4>
+        <div class="m2">180 m²</div>
+        <div class="mai__bas">
+          <svg viewBox="0 0 200 132" role="img" aria-label="Plan schématique 6 pièces">
+            <rect x="6" y="6" width="188" height="120" fill="#fff" stroke="#14498C" stroke-width="3"/>
+            <line x1="92" y1="6" x2="92" y2="126" stroke="#14498C" stroke-width="2"/>
+            <line x1="92" y1="36" x2="194" y2="36" stroke="#14498C" stroke-width="2"/>
+            <line x1="92" y1="66" x2="194" y2="66" stroke="#14498C" stroke-width="2"/>
+            <line x1="92" y1="96" x2="194" y2="96" stroke="#14498C" stroke-width="2"/>
+            <line x1="143" y1="96" x2="143" y2="126" stroke="#14498C" stroke-width="2"/>
+            <line x1="6" y1="52" x2="92" y2="52" stroke="#14498C" stroke-width="2"/>
+            <line x1="6" y1="90" x2="92" y2="90" stroke="#14498C" stroke-width="2"/>
+            <line x1="49" y1="90" x2="49" y2="126" stroke="#14498C" stroke-width="2"/>
+            <text x="49" y="33" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">SÉJOUR 1</text>
+            <text x="49" y="73" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">SÉJOUR 2</text>
+            <text x="27" y="111" font-size="8" text-anchor="middle" fill="#56626F" font-family="sans-serif">CUIS.</text>
+            <text x="70" y="111" font-size="8" text-anchor="middle" fill="#56626F" font-family="sans-serif">SDE</text>
+            <text x="143" y="25" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">SUITE</text>
+            <text x="143" y="55" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 2</text>
+            <text x="143" y="85" font-size="9" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 3</text>
+            <text x="117" y="115" font-size="8" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 4</text>
+            <text x="169" y="115" font-size="8" text-anchor="middle" fill="#56626F" font-family="sans-serif">CH 5</text>
+          </svg>
+          <p class="det">5 chambres dont une suite, double séjour, cuisine, 3 salles d'eau</p>
+        </div>
+      </button>
+    </div>
+
+    <div class="recap">
+      <div>
+        <label for="hm2" style="display:block;font-weight:600;font-size:15px">Surface habitable souhaitée</label>
+        <div class="surface-in">
+          <input id="hm2" type="text" inputmode="numeric" value="110">
+          <div class="unite">m²</div>
+        </div>
+        <p class="note" style="margin-top:0">
+          Les surfaces proposées sont des repères courants. Ajustez le chiffre : tout se recalcule.
+          Le nombre de briques est estimé à <strong>110 briques par m² habitable</strong>, un ratio calé sur
+          nos repères de chantier de 12 000 à 15 000 briques pour une maison courante.
+        </p>
+      </div>
+      <div>
+        <ul class="lignes">
+          <li><span>Format retenu</span><span id="h-nom">4 pièces · 110 m²</span></li>
+          <li><span>Briques estimées</span><span id="h-b">12 100</span></li>
+          <li><span>Palier de prix</span><span id="h-p">gros · 400 F</span></li>
+          <li><span>Poids à transporter</span><span id="h-c">45 t</span></li>
+          <li class="total"><span>Poste briques</span><span id="h-tot">4 840 000 F</span></li>
+        </ul>
+        <p class="eur" id="h-eur">soit environ 7 379 €</p>
+        <a class="btn btn-orange" style="width:100%;margin-top:18px" id="h-wa" href="https://wa.me/2250585794969" target="_blank" rel="noopener">Demander l'étude complète</a>
+      </div>
+    </div>
+
+    <p class="note">
+      Ce chiffre couvre <strong>les briques seules</strong>. Il ne comprend ni les fondations, ni la charpente
+      et la couverture, ni la plomberie, l'électricité et les finitions, ni la main d'œuvre. Le devis complet
+      poste par poste vous est établi après étude de votre plan et de votre terrain. Nous ne publions pas de
+      prix au m² tout compris, parce qu'un tel prix ne veut rien dire tant qu'on n'a pas vu le terrain.
+    </p>
+  </div>
+</section>
+
+<!-- ============ BANDE DIASPORA ============ -->
+<div class="bande">
+  <img src="images/maison-finition.jpg" alt="Ouvriers en casque en phase de finition sur une maison en briques">
+  <div class="wrap">
+    <div class="box">
+      <p class="kicker">Pour la diaspora</p>
+      <h2 class="titre" style="font-size:clamp(25px,3.6vw,36px)">Construire au pays sans y être, et voir chaque étape.</h2>
+      <p style="margin-bottom:6px">
+        Vous êtes à Paris, Milan, Montréal ou simplement à Abidjan. Le chantier est à Toumodi.
+        Entre les deux, il n'y a pas un cousin qui rend compte de temps en temps : il y a une société
+        immatriculée, un devis détaillé et des photos datées à chaque jalon.
+      </p>
+      <div class="contre">
+        <div class="oui">
+          <h4>Ce que vous recevez</h4>
+          <p>Un devis nominatif poste par poste. Des photos datées à chaque étape. Un interlocuteur unique
+          joignable sur WhatsApp. Une facture au nom de la société.</p>
+        </div>
+        <div>
+          <h4>Ce que nous n'avons pas encore</h4>
+          <p>Pas de compte séquestre bancaire, pas de garantie décennale assurée, pas de portail de suivi
+          en ligne. Nous le dirons le jour où ce sera vrai.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HÉRITAGE ============ -->
+<section id="heritage" class="sec-clair">
+  <div class="wrap">
+    <p class="kicker">Hier, aujourd'hui, demain</p>
+    <h2 class="titre">L'argile n'a aucun secret pour l'homme noir.</h2>
+    <p class="chapo">
+      Ce que nous industrialisons aujourd'hui, nos mères et nos pères le maîtrisaient déjà.
+      Nous n'importons pas une technique. Nous rendons son échelle à un savoir qui est le nôtre.
+    </p>
+
+    <div class="heritage">
+      <figure class="hcell hcell--large">
+        <img src="images/heritage/mosquee-bobo.jpg" alt="Grande mosquée de Bobo-Dioulasso, architecture soudano-sahélienne en terre" loading="lazy">
+        <figcaption><b>La grande mosquée de Bobo-Dioulasso</b>
+          Debout depuis le XIXe siècle. Terre crue, torons de bois, pas un sac de ciment.
+          Elle traverse les saisons des pluies depuis plus de cent ans.</figcaption>
+      </figure>
+      <figure class="hcell">
+        <img src="images/heritage/poterie.jpg" alt="Femme façonnant des poteries de terre à même le sol" loading="lazy">
+        <figcaption><b>La poterie</b>La première fois qu'une main d'ici a cuit de la terre, ce n'était pas un projet industriel. C'était la vie courante.</figcaption>
+      </figure>
+      <figure class="hcell">
+        <img src="images/heritage/mosquee-larabanga.jpg" alt="Mosquée de Larabanga au Ghana, bâtie en terre" loading="lazy">
+        <figcaption><b>Larabanga, Ghana</b>La preuve que la terre tient, si on la travaille bien et si on l'entretient.</figcaption>
+      </figure>
+      <figure class="hcell">
+        <img src="images/heritage/claustra-terre.jpg" alt="Claustra ajouré en terre cuite, motif traditionnel" loading="lazy">
+        <figcaption><b>Le claustra</b>Le mur qui respire. Nos anciens l'avaient inventé bien avant qu'on parle de ventilation naturelle.</figcaption>
+      </figure>
+      <figure class="hcell">
+        <img src="images/heritage/gens-terre.jpg" alt="Personnes en tenue traditionnelle devant une maison de terre décorée" loading="lazy">
+        <figcaption><b>Ce n'est pas de la pauvreté</b>C'est une architecture, avec ses règles, ses motifs et ses maîtres d'œuvre.</figcaption>
+      </figure>
+    </div>
+
+    <div class="fil">
+      <div><span>Hier</span><p>Le banco, la voûte nubienne, la poterie. La terre sous les pieds, façonnée à la main, cuite au feu de bois.</p></div>
+      <div><span>Aujourd'hui</span><p>La même terre, extraite dans nos carrières, malaxée, extrudée, cuite en four à Toumodi. Le calibre est constant, la résistance est mesurable.</p></div>
+      <div><span>Demain</span><p>Que la génération suivante n'ait pas à choisir entre bâtir moderne et bâtir sain. Parce que la terre, au bout du compte, reste notre refuge.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTE HABITAT SAIN ============ -->
+<section id="habitat" class="sec-encre sec-photo">
+  <div class="fond"><img src="images/racines.jpg" alt="" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kicker">Notre raison d'être</p>
+    <div class="manif">
+      <h2 class="titre">Être propriétaire d'une maison ne devrait pas être le but d'une vie, mais plutôt le début.</h2>
+      <p>
+        Chez nous, on ne construit pas un abri. On construit le lieu où l'on naît, où l'on reçoit,
+        où l'on veille les anciens et où l'on célèbre les vivants. La maison est le premier
+        investissement d'une famille et le dernier qu'elle accepte de perdre.
+      </p>
+      <p>
+        Alors la question n'est pas seulement « combien ça coûte ». Elle est aussi :
+        <strong>dans quoi allez-vous vivre durant votre passage terrestre ?
+        Que léguez-vous à votre descendance ?</strong>
+      </p>
+      <p class="grand">
+        Nos anciens bâtissaient avec la terre qu'ils avaient sous les pieds. Ils ne le faisaient pas
+        par idéologie. Ils le faisaient parce que ça tenait, parce que c'était frais, et parce que
+        la matière était là. Nous voulons revenir à cela, avec les moyens d'aujourd'hui.
+      </p>
+      <p>
+        Un mur de terre cuite respire. Il régule l'humidité au lieu de la retenir, ce qui veut dire
+        moins de moisissures dans les chambres et moins de peinture qui cloque au bout de deux saisons.
+        Il garde la fraîcheur en pleine journée. Il ne dégaze rien dans la pièce.
+        <strong>C'est ce que nous appelons un habitat sain.</strong>
+      </p>
+      <p>
+        Et la matière vient d'ici. Nous l'extrayons nous-mêmes, nous la cuisons à Toumodi, et elle est posée dans un rayon
+        où le camion ne roule pas trois jours. Ce que nous économisons, ce n'est pas un argument
+        de brochure : c'est du gasoil qui n'est pas brûlé.
+      </p>
+      <p style="color:#8FA4B8;font-size:16px;border-top:1px solid #23415C;padding-top:22px">
+        Nous ne dirons pas que notre brique est neutre en carbone. Nous ne l'avons pas mesuré,
+        et personne ne l'a mesuré pour nous. Cuire de la terre demande du feu, et le feu a un coût.
+        Ce que nous pouvons dire, c'est d'où vient ce feu, et c'est écrit juste en dessous.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÉCOLOGIE ============ -->
+<section id="ecologie" class="sec-clair">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <p class="kicker">L'argument écologique, sans slogan</p>
+        <h2 class="titre">De la terre, du feu, des déchets agricoles.</h2>
+        <p class="txt">
+          L'écologie se prouve par des faits vérifiables, pas par un logo vert. Voici ce que nous pouvons
+          dire, et rien de plus.
+        </p>
+        <div class="faits" style="margin-top:12px;grid-template-columns:1fr">
+          <div class="fait"><strong>~85 %</strong><span>de l'énergie de cuisson prévue à partir de déchets agricoles : coques d'anacarde, balle de riz, sciure de bois</span></div>
+          <div class="fait"><strong>Locale</strong><span>nous extrayons l'argile nous-mêmes, dans nos carrières. Elle ne traverse ni océan ni frontière avant d'être cuite</span></div>
+          <div class="fait"><strong>0</strong><span>label environnemental à ce jour. Les essais de résistance porteront sur la brique finie, au LBTP ou à l'INP-HB de Yamoussoukro</span></div>
+        </div>
+      </div>
+      <div><span class="zoom"><img src="images/maison-parement.jpg" alt="Maison dont la façade associe enduit clair et parement de terre cuite"></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIVRAISON ============ -->
+<section id="livraison">
+  <div class="wrap">
+    <div class="duo">
+      <div>
+        <p class="kicker">Livraison</p>
+        <h2 class="titre">Nous livrons partout. Et vous voyez le coût avant de payer.</h2>
+        <p class="txt">
+          Le transport pèse lourd sur un matériau lourd. Plutôt que de le noyer dans le prix,
+          nous le chiffrons séparément. À vous de juger si cela vaut le coup.
+        </p>
+      </div>
+      <div><span class="zoom"><img src="images/livraison.jpg" alt="Semi-remorque chargé sur la route, en livraison longue distance"></span></div>
+    </div>
+
+    <div class="zones" style="margin-top:44px">
+      <div class="zone">
+        <p class="delai">Sous 48 h</p>
+        <h4>Toute la Côte d'Ivoire</h4>
+        <p>Abidjan, Bouaké, San Pedro, Korhogo, Man, Odienné. Pas seulement Toumodi et ses environs :
+        le pays entier, en 48 heures au maximum.</p>
+      </div>
+      <div class="zone">
+        <p class="delai">Sur devis</p>
+        <h4>Toute la sous-région</h4>
+        <p>Burkina Faso, Mali, Ghana, Guinée, Niger. Par la route, sur volume. Nous chiffrons
+        l'acheminement complet avant que vous n'engagiez quoi que ce soit.</p>
+      </div>
+      <div class="zone">
+        <p class="delai">Notre horizon</p>
+        <h4>Le continent</h4>
+        <p>Notre ambition ne s'arrête pas aux frontières ivoiriennes. Chaque marché ouvert le sera
+        parce que nous savons y livrer, pas parce que ça sonne bien sur un site.</p>
+      </div>
+    </div>
+    <div style="margin-top:34px;background:#fff;border:1px solid var(--ligne);border-left:4px solid var(--orange);border-radius:11px;padding:24px">
+      <h4 style="font-size:18px;margin-bottom:9px">Le camion s'adapte au produit, jamais l'inverse</h4>
+      <p style="font-size:15px;color:var(--gris);margin-bottom:10px">
+        Nous ne travaillons pas avec un camion type. Le porteur est affrété selon deux critères :
+        <strong>le tonnage</strong> à déplacer et <strong>la fragilité</strong> de ce que vous commandez.
+      </p>
+      <p style="font-size:15px;color:var(--gris)">
+        Un lot de tuiles ou de plaquettes de parement ne voyage pas comme du fer à béton. Selon le cas,
+        nous mobilisons du petit porteur au 50 ou 60 tonnes. Le coût du transport est calculé sur votre
+        commande réelle et vous est communiqué avec le devis, ligne séparée, avant tout paiement.
+      </p>
+    </div>
+    <p class="note">
+      Pour la diaspora : vous commandez et vous réglez depuis l'étranger, la livraison se fait à l'adresse
+      de votre chantier ou de votre famille.
+    </p>
+  </div>
+</section>
+
+<!-- ============ BIBLIOTHÈQUE ============ -->
+<section id="realisations">
+  <div class="wrap">
+    <p class="kicker">Bibliothèque</p>
+    <h2 class="titre">Nos réalisations, et ce qui n'existe pas encore.</h2>
+    <p class="chapo">
+      Cette bibliothèque se remplit chantier par chantier. Vous y trouverez ce que nous avons fait,
+      daté et situé. Rien d'autre.
+    </p>
+
+    <div class="onglets" role="tablist">
+      <button class="onglet" type="button" role="tab" data-onglet="maison" aria-selected="true">La maison Nyakwaï</button>
+      <button class="onglet" type="button" role="tab" data-onglet="chantiers" aria-selected="false">Chantiers BTP</button>
+      <button class="onglet" type="button" role="tab" data-onglet="usine" aria-selected="false">L'usine de Toumodi</button>
+    </div>
+
+    <div class="biblio" id="biblio-maison">
+      <figure>
+        <img src="images/facade-valeurs.jpg" alt="La façade de MIENYAKWAISO ANWANZE à Toumodi, avec les quatre valeurs de la société inscrites sur la vitre" loading="lazy">
+        <figcaption><b>Notre façade</b>Rue du Commerce, Toumodi. Nos quatre valeurs sont écrites dessus.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/toles.jpg" alt="Rayonnage de tôles de couverture du magasin de Toumodi" loading="lazy">
+        <figcaption><b>Le rayon tôles</b>Bac aluminium, ondulée aluzinc prélaquée, métal tuile.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/carrelage.jpg" alt="Présentoir de carrelage du magasin" loading="lazy">
+        <figcaption><b>Le hall carrelage</b>Les échantillons sont visibles et manipulables sur place.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/bureau-etudes.jpg" alt="Le bureau d'études au travail" loading="lazy">
+        <figcaption><b>Le bureau d'études</b>Là où se préparent les métrés et les plans.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/camion-charge.jpg" alt="Camion chargé de matériaux, sanglé et prêt au départ" loading="lazy">
+        <figcaption><b>Le départ en livraison</b>Le porteur est affrété selon le tonnage et la fragilité du chargement.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/accueil-client.jpg" alt="Clients servis au comptoir" loading="lazy">
+        <figcaption><b>Le comptoir</b>Un client, une liste, un chiffrage. C'est là que tout part.</figcaption>
+      </figure>
+    </div>
+
+    <div class="biblio" id="biblio-chantiers" hidden>
+      <div class="vide">
+        <h4>Cette rubrique est encore vide, et nous la laissons vide.</h4>
+        <p>
+          Nous préférons une page blanche à des photos de chantiers qui ne sont pas les nôtres.
+          Chaque ouvrage livré viendra s'ajouter ici, avec sa date, sa commune et le nom du maître
+          d'ouvrage quand il accepte d'être cité. Si vous voulez être le premier chantier de cette
+          bibliothèque, écrivez-nous.
+        </p>
+      </div>
+    </div>
+
+    <div class="biblio" id="biblio-usine" hidden>
+      <div class="vide">
+        <h4>L'usine se monte. Nous documenterons chaque étape ici.</h4>
+        <p>
+          Terrassement, montage de la ligne, premier four, première fournée. Vous verrez les photos
+          datées au fur et à mesure, y compris celles des étapes qui prennent du retard. C'est aussi
+          comme ça qu'on juge une entreprise.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONFIANCE ============ -->
+<section id="confiance" class="sec-clair">
+  <div class="wrap">
+    <p class="kicker">Confiance</p>
+    <h2 class="titre">« Comment je sais que vous n'allez pas partir avec mon argent ? »</h2>
+    <p class="chapo">C'est la bonne question. Voici les réponses, y compris celles qui ne nous arrangent pas.</p>
+
+    <div class="qr">
+      <details open>
+        <summary>Qui êtes-vous, exactement ?</summary>
+        <div class="rep">
+          MIENYAKWAISO ANWANZE SARL, créée en septembre 2016, siège rue du Commerce à Toumodi.
+          Registre de commerce <strong>CI-TDI-2016-B-570</strong>. Compte contribuable <strong>1648508 S</strong>.
+          Capital social 10 000 000 FCFA. Ces références sont vérifiables auprès du greffe.
+        </div>
+      </details>
+      <details>
+        <summary>Est-ce que je paie tout d'avance ?</summary>
+        <div class="rep">
+          Non. En BTP, le paiement suit cinq jalons et le solde n'est appelé qu'à la réception.
+          En quincaillerie, la livraison peut être partielle ou totale, selon votre besoin et votre trésorerie.
+        </div>
+      </details>
+      <details>
+        <summary>Les briques, elles existent déjà ?</summary>
+        <div class="rep">
+          Non, et nous ne le cacherons pas. L'usine se monte à Toumodi. Les prix affichés sont nos prix
+          de lancement. La quincaillerie, elle, est ouverte et livre dès aujourd'hui.
+        </div>
+      </details>
+      <details>
+        <summary>Que se passe-t-il si le chantier prend du retard ?</summary>
+        <div class="rep">
+          Vous êtes prévenu, avec la raison et la nouvelle date. Nous préférons une mauvaise nouvelle dite
+          à temps à un silence de trois semaines. La célérité fait partie de nos quatre valeurs parce qu'un
+          projet retardé est un projet qui finit par mourir.
+        </div>
+      </details>
+      <details>
+        <summary>Avez-vous une garantie décennale ?</summary>
+        <div class="rep">
+          Non, pas à ce jour. Nous ne vous vendrons pas une assurance que nous n'avons pas.
+          Ce que nous vous donnons, c'est une société identifiée, un devis écrit et des preuves photo
+          à chaque étape.
+        </div>
+      </details>
+    </div>
+
+    <div style="margin-top:44px">
+      <span class="zoom"><img src="images/bureau-etudes.jpg" alt="Le bureau d'études au travail sur un dossier de chantier" style="border-radius:12px;max-width:780px;box-shadow:0 18px 44px rgba(11,26,43,.18)"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REJOINDRE ============ -->
+<section id="rejoindre" class="sec-clair">
+  <div class="wrap">
+    <p class="kicker">Travailler avec nous</p>
+    <h2 class="titre">Une usine, un magasin et des chantiers, ça ne se tient pas à trois.</h2>
+    <p class="chapo">
+      Nous ouvrons quatre portes. Chacune mène à quelqu'un qui lit vraiment les messages.
+      Dites qui vous êtes et ce que vous savez faire, c'est tout ce que nous demandons pour commencer.
+    </p>
+
+    <div class="faits" style="margin:-18px 0 44px">
+      <div class="fait">
+        <strong>+ 10 000</strong>
+        <span>ouvriers du BTP référencés dans notre carnet : maçons, ferrailleurs, carreleurs,
+        ferronniers, plombiers, électriciens. Joignables en temps réel et mobilisables partout
+        en Côte d'Ivoire, et au-delà de nos frontières selon le chantier.</span>
+      </div>
+      <div class="fait">
+        <strong>20 à 30</strong>
+        <span>revendeurs de matériaux en relation suivie. C'est par eux que passera la distribution
+        de la terre cuite au-delà de notre rayon direct.</span>
+      </div>
+      <div class="fait">
+        <strong>10 ans</strong>
+        <span>d'exploitation continue depuis 2016. C'est ce qui a construit ce carnet, et c'est
+        ce qu'un nouvel entrant ne peut pas acheter.</span>
+      </div>
+    </div>
+    <p class="note" style="margin:-30px 0 40px">
+      Ces ouvriers ne sont pas nos salariés : ce sont des indépendants que nous mobilisons lot par lot,
+      selon le chantier et la spécialité. C'est ce qui nous permet d'armer une équipe en quelques jours,
+      là où le chantier se trouve, sans porter une masse salariale à vide.
+    </p>
+
+    <div class="rej">
+      <article class="rejc">
+        <h4>Ouvriers et artisans</h4>
+        <p>Maçons, ferrailleurs, charpentiers, carreleurs, plombiers, électriciens, peintres.</p>
+        <ul>
+          <li>Chantiers à Toumodi, Yamoussoukro et alentour</li>
+          <li>Travail à la tâche ou à la journée, selon le lot</li>
+          <li>Nous demandons deux références de chantier vérifiables</li>
+          <li>La pose de la terre cuite s'apprend, nous formons</li>
+        </ul>
+        <a class="btn btn-bleu" href="https://wa.me/2250585794969?text=Bonjour%2C%20je%20suis%20ouvrier%20ou%20artisan.%20Mon%20m%C3%A9tier%20%3A%20...%20Mes%20r%C3%A9f%C3%A9rences%20%3A%20..." target="_blank" rel="noopener">Proposer mes services</a>
+      </article>
+
+      <article class="rejc">
+        <span class="zoom"><img src="images/ingenieure.jpg" alt="Ingénieure en casque de chantier tenant un rouleau de plans" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:9px;margin-bottom:16px"></span>
+        <h4>Architectes et bureaux d'études</h4>
+        <p>Concepteurs, ingénieurs structure, dessinateurs, géomètres, thermiciens.</p>
+        <ul>
+          <li>Modèles de maison à dessiner pour notre catalogue</li>
+          <li>Études de structure en maçonnerie de terre cuite</li>
+          <li>Collaboration au projet ou en apport d'affaires</li>
+          <li>Nous cherchons des plans pensés pour le climat d'ici</li>
+        </ul>
+        <a class="btn btn-orange" href="mailto:contact@mienyakwaiso.com?subject=Architecte%20ou%20bureau%20d%27%C3%A9tudes&amp;body=Bonjour%2C%20je%20suis%20architecte%20ou%20ing%C3%A9nieur.%20Voici%20mon%20portfolio%20et%20ce%20que%20je%20propose%20%3A" target="_blank" rel="noopener">Nous écrire</a>
+      </article>
+
+      <article class="rejc">
+        <h4>Fournisseurs et producteurs</h4>
+        <p>Matériaux, matériel, transport, et fournisseurs de combustible de cuisson.</p>
+        <ul>
+          <li>Coques d'anacarde, balle de riz, sciure de bois</li>
+          <li>Transporteurs, porteurs de 5 à 60 tonnes</li>
+          <li>Références de quincaillerie que nous ne tenons pas encore</li>
+          <li>Paiement selon des conditions écrites, pas verbales</li>
+        </ul>
+        <a class="btn btn-bleu" href="https://wa.me/2250585794969?text=Bonjour%2C%20je%20suis%20fournisseur.%20Ce%20que%20je%20propose%20%3A" target="_blank" rel="noopener">Proposer une offre</a>
+      </article>
+
+      <article class="rejc">
+        <h4>Investisseurs et partenaires</h4>
+        <p>Financement de la ligne de production, du fonds de roulement et du déploiement.</p>
+        <ul>
+          <li>Société immatriculée depuis 2016, comptes tenus</li>
+          <li>Dossier chiffré transmis après un premier échange</li>
+          <li>Nous exposons aussi le passif, il existe et nous le disons</li>
+          <li>Partenariats techniques bienvenus, pas seulement financiers</li>
+        </ul>
+        <a class="btn btn-orange" href="mailto:contact@mienyakwaiso.com?subject=Investisseur%20ou%20partenaire&amp;body=Bonjour%2C%20je%20souhaite%20%C3%A9changer%20sur%20un%20partenariat.%20Voici%20qui%20je%20suis%20%3A" target="_blank" rel="noopener">Demander le dossier</a>
+      </article>
+    </div>
+
+    <p class="note">
+      Nous répondons à tout le monde, y compris pour dire non. Une candidature sans réponse,
+      c'est le contraire de la proximité que nous revendiquons.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<div class="cta-final">
+  <div class="wrap">
+    <h2>Dites-nous ce que vous voulez construire.</h2>
+    <p>Une liste de matériaux, un plan, ou simplement une idée et un budget. Nous répondons avec des chiffres.</p>
+    <div class="btns">
+      <a class="btn btn-wa" href="https://wa.me/2250585794969?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20votre%20site." target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+      <a class="btn btn-ghost" href="mailto:contact@mienyakwaiso.com">Envoyer un e-mail</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+
+    <div class="marques">
+      <p class="marques__t">Les marques que nous distribuons</p>
+      <ul>
+        <li><img src="images/marques/bigcim.png" alt="BIGCIM" loading="lazy"></li>
+        <li><img src="images/marques/sotaci.svg" alt="SOTACI" loading="lazy"></li>
+        <li><img src="images/marques/universelle-industries.png" alt="Universelle Industries" loading="lazy"></li>
+        <li><img src="images/marques/sippec.svg" alt="SIPPEC" loading="lazy"></li>
+      </ul>
+      <p class="marques__n">Ce sont nos fournisseurs, pas nos partenaires commerciaux. Leurs marques
+      leur appartiennent, nous distribuons leurs produits.</p>
+    </div>
+    <div class="fgrid">
+      <div>
+        <img src="images/logo.jpg" alt="Logo MIENYAKWAISO ANWANZE SARL" style="height:110px;width:auto;border-radius:9px;margin-bottom:18px">
+        <h5>MIENYAKWAISO ANWANZE SARL</h5>
+        <p style="margin-bottom:12px">Acronyme NYAKWAÏ. Quincaillerie, production de briques de terre cuite
+        et prestations de services BTP. Créée en septembre 2016.</p>
+        <p>Faciliter l'investissement immobilier partout et par tous.</p>
+      </div>
+      <div>
+        <h5>Nos métiers</h5>
+        <ul>
+          <li><a href="#apropos">Qui sommes-nous</a></li>
+          <li><a href="#quincaillerie">Quincaillerie</a></li>
+          <li><a href="#briques">Briques de terre cuite</a></li>
+          <li><a href="#gamme">La gamme terre cuite</a></li>
+          <li><a class="clignote" href="terre-cuite.html" style="color:var(--orange);font-weight:600;display:inline-block;border-radius:6px">Le site dédié terre cuite →</a></li>
+          <li><a href="#maison">Choisir ma maison</a></li>
+          <li><a href="#btp">Construction et BTP</a></li>
+          <li><a href="#habitat">Habitat sain</a></li>
+          <li><a href="#realisations">Réalisations</a></li>
+          <li><a href="#rejoindre">Nous rejoindre</a></li>
+          <li><a href="#livraison">Livraison</a></li>
+          <li><a href="#confiance">Confiance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Nous joindre</h5>
+        <ul>
+          <li><a href="tel:+2250778582764">Appeler : +225 07 78 58 27 64</a></li>
+          <li><a href="tel:+2250585794969">ou : +225 05 85 79 49 69</a></li>
+          <li><a href="https://wa.me/2250585794969" target="_blank" rel="noopener">WhatsApp : +225 05 85 79 49 69</a></li>
+          <li><a href="mailto:contact@mienyakwaiso.com">contact@mienyakwaiso.com</a></li>
+          <li>Lundi au samedi, 7 h 30 à 17 h 30</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Nous trouver</h5>
+        <ul>
+          <li>Magasin : rue du Commerce, Toumodi</li>
+          <li>Usine : bordure autoroute A3, Toumodi</li>
+          <li>RCCM : CI-TDI-2016-B-570</li>
+          <li>Compte contribuable : 1648508 S</li>
+          <li>Capital social : 10 000 000 FCFA</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="avert">
+      <b>Note de transparence.</b> Les photographies de la quincaillerie, de l'équipe, du comptoir et de la
+      livraison sont des photos réelles du magasin de Toumodi. Les images de briques de parement et de
+      chantiers en terre cuite sont des illustrations sous licence libre, en attendant la mise en production
+      de l'usine. Les plans de maison sont des schémas de principe, non contractuels. Les prix des briques
+      sont des prix de lancement, susceptibles d'évoluer jusqu'au démarrage.
+    </div>
+
+    <div class="legal">
+      <span>© 2026 MIENYAKWAISO ANWANZE SARL. Tous droits réservés.</span>
+      <span>Toumodi, Côte d'Ivoire</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/2250585794969?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20votre%20site." target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.09c-.25.69-1.44 1.32-1.99 1.4-.51.08-1.15.11-1.86-.12-.43-.14-.98-.32-1.69-.62-2.97-1.28-4.91-4.27-5.06-4.47-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.59-.37.79-.37h.57c.18 0 .43-.7.67.51.25.6.84 2.06.91 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.45.52-.15.15-.3.31-.13.61.17.3.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.36 1.46.3.15.47.12.65-.7.17-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.71.81 2.01.96.3.15.5.22.57.35.07.12.07.72-.18 1.41z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<div class="fleches" id="fleches" role="navigation" aria-label="Navigation dans la page">
+  <button class="fl fl--bout" id="fl-garde" aria-label="Aller a la page de garde" title="Page de garde">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 11l6-6 6 6M6 18l6-6 6 6"/></svg>
+  </button>
+  <div class="fl__sep"></div>
+  <button class="fl" id="fl-haut" aria-label="Section precedente" title="Section precedente">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+  </button>
+  <button class="fl" id="fl-bas" aria-label="Section suivante" title="Section suivante">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+  </button>
+  <div class="fl__sep"></div>
+  <button class="fl fl--bout" id="fl-fin" aria-label="Aller au bas de la page" title="Bas de page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l6 6 6-6M6 13l6 6 6-6"/></svg>
+  </button>
+</div>
+<div class="gal" id="gal" role="dialog" aria-modal="true" aria-labelledby="gal-t">
+  <div class="gal__box">
+    <div class="gal__hd">
+      <div><h3 id="gal-t"></h3><p id="gal-d"></p></div>
+      <button class="gal__x" id="gal-x" aria-label="Fermer la galerie">×</button>
+    </div>
+    <div class="gal__grid" id="gal-g"></div>
+    <div class="gal__ft">
+      <p id="gal-n"></p>
+      <a class="btn btn-wa" id="gal-wa" href="https://wa.me/2250585794969" target="_blank" rel="noopener">Demander un prix sur cette famille</a>
+    </div>
+  </div>
+</div>
+<script>
+var CATALOGUE={"ciment":{"t":"Ciment","d":"CPJ 32,5 N · CPJ 42,5 N et R · CPA 42,5 N et R","i":["ciment-tien-01.jpg","ciment-06.jpg"]},"fer-a-beton":{"t":"Fer à béton","d":"Diamètres 6, 8, 10, 12, 14, 16, 18, 20, 25, 32","i":["fer-a-beton-tien-9.jpg","fer-a-beton-tien-10.jpg","fer-a-beton-tien-11.jpg","fer-a-beton-01.jpg","fer-a-beton-02.jpg","fer-a-beton-03.jpg","fer-a-beton-04.jpg","fer-a-beton-05.jpg","fer-a-beton-06.jpg"]},"toles":{"t":"Tôles de couverture","d":"Bac aluminium, ondulée aluzinc prélaquée, métal tuile, plancher collaborant","i":["toles-tien-16.jpg","toles-tien-21.jpg","toles-02.jpg","toles-03.jpg","toles-04.jpg","toles-05.jpg","toles-06.jpg","toles-07.jpg"]},"peinture":{"t":"Peinture","d":"Vinylique, acrylique, glycéro","i":["peinture-01.jpg","peinture-02.jpg","peinture-03.jpg","peinture-04.jpg","peinture-05.jpg"]},"carrelage":{"t":"Carrelage","d":"Sol et mur, du 40×40 au 60×120","i":["carrelage-tien-159.jpg","carrelage-tien-160.jpg","carrelage-tien-161.jpg","carrelage-tien-162.jpg","carrelage-tien-163.jpg","carrelage-tien-164.jpg","carrelage-tien-165.jpg","carrelage-tien-169.jpg","carrelage-tien-170.jpg","carrelage-tien-171.jpg","carrelage-tien-172.jpg"]},"plomberie":{"t":"Plomberie et sanitaire","d":"Raccords PPR et PVC, WC, douches, lavabos","i":["plomberie-01.jpg","plomberie-02.jpg","plomberie-03.jpg","plomberie-04.jpg","plomberie-05.jpg","plomberie-06.jpg"]},"electricite":{"t":"Électricité","d":"Câblerie, appareillage, disjoncteurs, coffrets","i":["electricite-01.jpg","electricite-02.jpg","electricite-03.jpg","electricite-04.jpg","electricite-05.jpg"]},"luminaire":{"t":"Luminaire","d":"Suspensions, spots, réglettes, dalles LED","i":["luminaire-01.jpg","luminaire-02.jpg","luminaire-03.jpg","luminaire-04.jpg","luminaire-05.jpg"]},"ferronnerie":{"t":"Ferronnerie","d":"Tube carré, rectangle et rond, fer plat, cornière, TPN et TPG","i":["ferronnerie-tien-28.jpg","ferronnerie-01.jpg","ferronnerie-02.jpg","ferronnerie-03.jpg","ferronnerie-04.jpg","ferronnerie-05.jpg","ferronnerie-06.jpg","ferronnerie-07.jpg"]},"charpenterie":{"t":"Charpenterie","d":"Pannes Z et Sigma, profilés placo, profilés H","i":["charpenterie-01.jpg","charpenterie-02.jpg","charpenterie-03.jpg","charpenterie-04.jpg","charpenterie-05.jpg","charpenterie-06.jpg"]},"tuyauterie":{"t":"Tuyauterie PVC","d":"Tubes et raccords évacuation et pression","i":["tuyauterie-tien-129.jpg","tuyauterie-01.jpg","tuyauterie-02.jpg","tuyauterie-03.jpg","tuyauterie-04.jpg"]},"robinetterie":{"t":"Robinetterie","d":"Mitigeurs lavabo, évier, colonnes de douche","i":["robinetterie-01.jpg","robinetterie-02.jpg","robinetterie-03.jpg","robinetterie-04.jpg","robinetterie-05.jpg"]},"lambris":{"t":"Lambris PVC","d":"Habillage plafond et mur, coloris bois et unis","i":["lambris-tien-135.jpg","lambris-tien-136.jpg","lambris-tien-137.jpg","lambris-tien-138.jpg","lambris-tien-139.jpg","lambris-tien-140.jpg","lambris-tien-141.jpg","lambris-tien-142.jpg"]},"contreplaque":{"t":"Panneaux contreplaqués","d":"Coffrage et menuiserie","i":["contreplaque-tien-01.jpg","contreplaque-01.jpg","contreplaque-02.jpg","contreplaque-03.jpg","contreplaque-04.jpg","contreplaque-05.jpg","contreplaque-06.jpg"]},"serrurerie":{"t":"Serrurerie","d":"Serrures, béquilles, paumelles, verrous","i":["serrurerie-01.jpg","serrurerie-02.jpg","serrurerie-03.jpg","serrurerie-04.jpg","serrurerie-05.jpg"]},"accessoires":{"t":"Accessoires","d":"Pointes, fil recuit et galva, tiges filetées, tirefonds, faîtières, brouettes","i":["accessoires-tien-66.jpg","accessoires-01.jpg","accessoires-02.jpg","accessoires-03.jpg","accessoires-04.jpg","accessoires-05.jpg","accessoires-06.jpg"]}};
+(function(){
+  var TEL='2250585794969';
+  var EUR=655.957, PAR_M2=48, PAR_M2_HAB=110, KG_BRIQUE=3.7;
+
+  function fmt(n){return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g,' ');}
+  function palier(b){ if(b<500)return{pu:500,nom:'détail'}; if(b<=5000)return{pu:450,nom:'demi-gros'}; return{pu:400,nom:'gros'}; }
+  function nb(v){ var n=parseInt(String(v).replace(/[^0-9]/g,''),10); return (isNaN(n)||n<0)?0:n; }
+  function wa(msg){ return 'https://wa.me/'+TEL+'?text='+encodeURIComponent(msg); }
+  var $=function(id){return document.getElementById(id);};
+
+  /* --- menu --- */
+  var b=$('burger'), n=$('nav');
+  b.addEventListener('click',function(){n.classList.toggle('ouvert');});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A')n.classList.remove('ouvert');});
+
+  /* --- fleches de parcours, section par section --- */
+  var flBoite=document.getElementById('fleches'),
+      flH=document.getElementById('fl-haut'), flB=document.getElementById('fl-bas');
+  var reperes=[];
+  /* hauteur du bandeau fixe du haut, a retrancher de chaque repere
+     sinon on atterrit avec le titre de la rubrique cache dessous */
+  function hautBarre(){
+    var e=document.querySelector('.bar');
+    while(e && e!==document.body){          /* le bandeau fixe est un parent de .bar */
+      var st=getComputedStyle(e);
+      if(st.position==='fixed' || st.position==='sticky')
+        return Math.round(e.getBoundingClientRect().height)+8;
+      e=e.parentElement;
+    }
+    var m=parseInt(getComputedStyle(document.body).paddingTop,10);
+    return (m>0?m:0)+8;
+  }
+
+  function construireReperes(){
+    var h=hautBarre();
+    reperes=[].slice.call(document.querySelectorAll('.banniere,.hero,section[id],.bande,.cta-final,.final,footer'))
+      .map(function(e){return Math.max(0, Math.round(e.getBoundingClientRect().top+window.scrollY)-h);})
+      .filter(function(v,i,a){return a.indexOf(v)===i;})
+      .sort(function(a,b){return a-b;});
+  }
+  var voile=document.createElement('div');
+  voile.className='voile';
+  document.body.appendChild(voile);
+  var sautEnCours=false;
+
+  /* couleur de fond de la rubrique qui se trouve a cette hauteur */
+  function fondA(y){
+    var l=document.querySelectorAll('.banniere,.hero,section[id],.cta-final,.final');
+    for(var i=0;i<l.length;i++){
+      var r=l[i].getBoundingClientRect(), haut=r.top+window.scrollY;
+      if(y+60>=haut && y+60<haut+r.height){
+        var e=l[i];
+        while(e){
+          var c=getComputedStyle(e).backgroundColor;
+          if(c && c!=='transparent' && c.replace(/ /g,'').indexOf('rgba(0,0,0,0)')<0) return c;
+          e=e.parentElement;
+        }
+      }
+    }
+    return getComputedStyle(document.body).backgroundColor || '#FBFAF8';
+  }
+
+  /* La feuille de style impose un defilement doux a tout le document.
+     Pour un saut long il faut vraiment l instantane, sinon on anime
+     des milliers de pixels et le telephone saccade. */
+  function sauteVite(y){
+    try { window.scrollTo({ top: y, behavior: 'instant' }); return; } catch(e) {}
+    try {
+      var h = document.documentElement, av = h.style.scrollBehavior;
+      h.style.scrollBehavior = 'auto';
+      void getComputedStyle(h).scrollBehavior;   /* force le recalcul, sinon sans effet */
+      window.scrollTo(0, y);
+      h.style.scrollBehavior = av;
+      return;
+    } catch(e) {}
+    window.scrollTo(0, y);                        /* navigateurs anciens */
+  }
+
+  function allerA(y){
+    var maxi = document.documentElement.scrollHeight - window.innerHeight;
+    y = Math.max(0, Math.min(y, maxi < 0 ? 0 : maxi));
+    var doux = true;
+    try { if (window.matchMedia) doux = !window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e) {}
+    if (!doux) { window.scrollTo(0, y); return; }
+
+    var distance = Math.abs(y - window.scrollY);
+    if (distance < window.innerHeight * 1.3) {      /* courte distance : defilement doux */
+      try { window.scrollTo({ top: y, behavior: 'smooth' }); }
+      catch(e) { window.scrollTo(0, y); }           /* navigateurs anciens */
+      return;
+    }
+
+    /* longue distance : un defilement anime obligerait le telephone a redessiner
+       toute la page en continu, ca saccade. On masque, on saute, on revele. */
+    if (sautEnCours) return;
+    sautEnCours = true;
+    voile.style.background = fondA(y);   /* la couleur de la rubrique d arrivee */
+    voile.classList.add('vu');
+    setTimeout(function(){
+      sauteVite(y);
+      setTimeout(function(){ voile.classList.remove('vu'); sautEnCours=false; }, 60);
+    }, 130);
+  }
+  flH.addEventListener('click',function(){
+    var y=window.scrollY, prec=0;
+    for(var i=0;i<reperes.length;i++){ if(reperes[i] < y-12) prec=reperes[i]; }
+    allerA(prec);
+  });
+  flB.addEventListener('click',function(){
+    var y=window.scrollY, suiv=null;
+    for(var i=0;i<reperes.length;i++){ if(reperes[i] > y+12){ suiv=reperes[i]; break; } }
+    allerA(suiv===null ? document.body.scrollHeight : suiv);
+  });
+  function majFleches(){
+    var y=window.scrollY;
+    flBoite.classList.toggle('visible', y > window.innerHeight*0.55);
+    var enHaut = y < 40, enBas = (y + window.innerHeight) >= document.body.scrollHeight - 40;
+    flH.disabled = enHaut; flG.disabled = enHaut;
+    flB.disabled = enBas;  flF.disabled = enBas;
+  }
+  window.addEventListener('scroll',majFleches,{passive:true});
+  window.addEventListener('resize',function(){construireReperes();majFleches();});
+  window.addEventListener('load',construireReperes);
+/* --- grande fleche : retour a la page de garde --- */
+  var flG=document.getElementById('fl-garde');
+  flG.addEventListener('click',function(){ allerA(0); });
+  var flF=document.getElementById('fl-fin');
+  flF.addEventListener('click',function(){ allerA(document.body.scrollHeight); });
+
+  construireReperes(); majFleches();
+
+  /* --- apparition douce des blocs a l entree dans l ecran --- */
+  (function(){
+    var doux = true;
+    try { if (window.matchMedia) doux = !window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch(e) {}
+    if (!doux || !('IntersectionObserver' in window)) return;
+
+    var sel = 'section .kicker, section h2.titre, section .chapo, .fam, .prod, .zone,'
+            + ' .carte, .valeur, .mai, .rejc, .fseur, .biblio figure, .fait, .invc,'
+            + ' .etapes > li, .jalons > li, .hcell, .credo, .dixans, .pros, .fournisseurs';
+    var cibles = [].slice.call(document.querySelectorAll(sel)).slice(0, 140);
+    if (!cibles.length) return;
+
+    cibles.forEach(function(e, i){
+      e.classList.add('revele');
+      e.style.transitionDelay = ((i % 4) * 70) + 'ms';   /* leger decalage, jamais plus de 4 */
+    });
+
+    var oeil = new IntersectionObserver(function(entrees){
+      entrees.forEach(function(x){
+        if (!x.isIntersecting) return;
+        x.target.classList.add('vu');
+        oeil.unobserve(x.target);                        /* on n observe plus, ca ne coute plus rien */
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+
+    cibles.forEach(function(e){ oeil.observe(e); });
+
+    /* filet de securite : si quelque chose empeche l observation, tout redevient visible */
+    setTimeout(function(){
+      cibles.forEach(function(e){ if (!e.classList.contains('vu')) {
+        var r = e.getBoundingClientRect();
+        if (r.top < window.innerHeight) e.classList.add('vu');
+      }});
+    }, 1200);
+  })();
+
+
+  /* --- glisser de gauche a droite pour changer de rubrique --- */
+  var bulle=document.createElement('div');
+  bulle.className='bulle';
+  bulle.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" '
+    +'stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>'
+    +'<span class="titre"></span><span class="rang"></span>';
+  document.body.appendChild(bulle);
+  var fleche=bulle.querySelector('svg path'), libelle=bulle.querySelector('.titre'), rang=bulle.querySelector('.rang');
+  var minuteur=null;
+
+  /* les rubriques absentes du menu du haut portent ces noms */
+  var SECOURS={haut:'Accueil',briques:'Nos briques',heritage:'Notre héritage',
+    ecologie:'Écologie',livraison:'Livraison',confiance:'Confiance',
+    maison:'Ma maison',habitat:'Habitat sain'};
+
+  function etapes(){
+    var noms={};
+    [].slice.call(document.querySelectorAll('#nav a[href^="#"]')).forEach(function(a){
+      var h=a.getAttribute('href').slice(1); if(h) noms[h]=a.textContent.trim();
+    });
+    var l=[].slice.call(document.querySelectorAll('.banniere,.hero,section[id],.cta-final,.final'));
+    return l.map(function(e){
+      var nom=noms[e.id] || SECOURS[e.id];
+      if(!nom){
+        if(e.classList.contains('cta-final')||e.classList.contains('final')) nom='Nous contacter';
+        else if(e.classList.contains('banniere')||e.classList.contains('hero')) nom='Accueil';
+        else { var t=e.querySelector('h2.titre,h1,.kicker');
+               nom = t ? t.textContent.trim().split('·')[0].trim() : 'Rubrique'; }
+      }
+      return { y: Math.max(0, Math.round(e.getBoundingClientRect().top+window.scrollY)-hautBarre()),
+               nom: nom.slice(0,30) };
+    }).filter(function(o,i,a){ return a.findIndex(function(x){return x.y===o.y;})===i; })
+      .sort(function(a,b){ return a.y-b.y; });
+  }
+  var pas=etapes();
+  window.addEventListener('load',function(){ pas=etapes(); });
+  window.addEventListener('resize',function(){ pas=etapes(); });
+
+  function annonce(nom, i, total, versLeBas){
+    libelle.textContent=nom;
+    rang.textContent=(i+1)+' / '+total;
+    fleche.setAttribute('d', versLeBas? 'M5 12h14M12 5l7 7-7 7' : 'M19 12H5M12 19l-7-7 7-7');
+    bulle.classList.add('vue');
+    clearTimeout(minuteur);
+    minuteur=setTimeout(function(){ bulle.classList.remove('vue'); }, 1100);
+  }
+
+  function sauter(sens){
+    if(!pas.length) pas=etapes();
+    var y=window.scrollY, i=0;
+    for(var k=0;k<pas.length;k++){ if(pas[k].y <= y+14) i=k; }
+    var j=Math.min(pas.length-1, Math.max(0, i+sens));
+    if(j===i && sens>0) return;
+    if(j===i && sens<0 && y<=14) return;
+    allerA(pas[j].y);
+    annonce(pas[j].nom, j, pas.length, sens>0);
+  }
+
+  /* on repere la zone qui defile deja horizontalement sous le doigt */
+  function zoneBloquante(cible){
+    var e=cible;
+    while(e && e!==document.body){
+      if(e.id==='nav' || (e.classList && e.classList.contains('fleches'))) return {dur:true};
+      var st=getComputedStyle(e);
+      if((st.overflowX==='auto'||st.overflowX==='scroll') && e.scrollWidth > e.clientWidth + 4) return {el:e};
+      e=e.parentElement;
+    }
+    return null;
+  }
+
+  var dx=0, dy=0, x0=0, y0=0, zone=null, suivi=null, bloqueClic=false;
+  document.addEventListener('click',function(e){
+    if(bloqueClic){ e.preventDefault(); e.stopPropagation(); }
+  }, true);
+  function ceDoigt(e){                    /* on retrouve le doigt suivi parmi ceux qui changent */
+    if(suivi===null||!e.changedTouches) return null;
+    for(var i=0;i<e.changedTouches.length;i++)
+      if(e.changedTouches[i].identifier===suivi) return e.changedTouches[i];
+    return null;
+  }
+  function pasUnClic(){                   /* le doigt a glisse, on annule le clic qui suit */
+    if(Math.abs(dx)<=24 && Math.abs(dy)<=24) return;
+    bloqueClic=true;
+    setTimeout(function(){ bloqueClic=false; }, 450);
+  }
+  document.addEventListener('touchstart',function(e){
+    if(suivi!==null){ suivi=null; zone={dur:true}; return; }   /* un deuxieme doigt, on abandonne */
+    var t=e.changedTouches[0]; if(!t) return;
+    suivi=t.identifier; x0=t.clientX; y0=t.clientY; dx=0; dy=0;
+    zone=zoneBloquante(e.target);
+  },{passive:true});
+  document.addEventListener('touchmove',function(e){
+    var t=ceDoigt(e); if(!t) return;
+    dx=t.clientX-x0; dy=t.clientY-y0;
+    /* des que le geste est franchement horizontal, on le prend en main :
+       sinon le navigateur declenche son propre retour en arriere */
+    if(zone && zone.dur) return;
+    if(Math.abs(dx)>10 && Math.abs(dx)>Math.abs(dy)*1.2 && e.cancelable) e.preventDefault();
+  },{passive:false});
+  document.addEventListener('touchcancel',function(e){
+    if(!ceDoigt(e)) return;
+    suivi=null; pasUnClic();
+  },{passive:true});
+  document.addEventListener('touchend',function(e){
+    var t=ceDoigt(e); if(!t) return;
+    suivi=null;
+    /* on mesure la position finale du doigt : certains navigateurs cessent
+       d envoyer les mouvements en cours de geste, un cumul serait faux */
+    dx=t.clientX-x0; dy=t.clientY-y0;
+    pasUnClic();
+    if(Math.abs(dx)<48 || Math.abs(dx)<Math.abs(dy)*1.15) return;  /* geste franc et horizontal */
+    if(zone){
+      if(zone.dur) return;                /* le menu ne change jamais de rubrique */
+      var el=zone.el;                     /* une galerie : on ne saute qu une fois arrive au bout */
+      var auBout = dx<0 ? (el.scrollLeft >= el.scrollWidth - el.clientWidth - 3) : (el.scrollLeft <= 3);
+      if(!auBout) return;
+    }
+    sauter(dx<0 ? 1 : -1);                                          /* vers la gauche = suivant */
+  },{passive:true});
+
+
+  /* --- barre de progression et rubrique en cours --- */
+  var jauge=document.createElement('div');
+  jauge.className='jauge'; document.querySelector('header').appendChild(jauge);
+  var liens=[].slice.call(document.querySelectorAll('nav a[href^="#"]'));
+  var cibles=liens.map(function(a){ return {a:a, e:document.querySelector(a.getAttribute('href'))}; })
+                  .filter(function(o){ return o.e; });
+  function majReperes(){
+    var h=document.body.scrollHeight-window.innerHeight;
+    jauge.style.width=(h>0? Math.min(100,(window.scrollY/h)*100):0)+'%';
+    var y=window.scrollY+window.innerHeight*0.32, courant=null;
+    cibles.forEach(function(o){
+      var t=o.e.getBoundingClientRect().top+window.scrollY;
+      if(t<=y) courant=o.a;
+    });
+    liens.forEach(function(a){ a.classList.toggle('actif', a===courant); });
+  }
+  window.addEventListener('scroll',majReperes,{passive:true});
+  window.addEventListener('resize',majReperes);
+  majReperes();
+
+
+
+
+
+  /* --- le header n'apparaît qu'après la bannière --- */
+  var head=document.querySelector('header'), ban=document.querySelector('.banniere');
+  function majHeader(){
+    var seuil=ban.offsetHeight-90;
+    head.classList.toggle('visible', window.scrollY>seuil);
+  }
+  window.addEventListener('scroll',majHeader,{passive:true});
+  window.addEventListener('resize',majHeader);
+  majHeader();
+
+  /* --- onglets de la bibliothèque --- */
+  var onglets=[].slice.call(document.querySelectorAll('.onglet[data-onglet]'));
+  onglets.forEach(function(o){
+    o.addEventListener('click',function(){
+      onglets.forEach(function(x){
+        var actif=(x===o);
+        x.setAttribute('aria-selected',actif?'true':'false');
+        var panneau=$('biblio-'+x.getAttribute('data-onglet'));
+        if(panneau) panneau.hidden=!actif;
+      });
+    });
+  });
+
+  /* --- galerie du catalogue --- */
+  var gal=$('gal'), galG=$('gal-g'), dernierFocus=null;
+  function ouvrirGalerie(cle){
+    var f=CATALOGUE[cle]; if(!f) return;
+    $('gal-t').textContent=f.t;
+    $('gal-d').textContent=f.d;
+    galG.innerHTML='';
+    f.i.forEach(function(nom){
+      var fig=document.createElement('figure');
+      var im=document.createElement('img');
+      im.src='images/catalogue/'+cle+'/'+nom;
+      im.alt=f.t+' : article du catalogue';
+      im.loading='lazy';
+      fig.appendChild(im); galG.appendChild(fig);
+    });
+    $('gal-n').textContent='Ces '+f.i.length+' visuels illustrent les articles de la famille « '+f.t
+      +' ». Les modèles et coloris exacts disponibles en magasin peuvent varier. Demandez, nous vous confirmons '
+      +'la référence, le prix et le délai avant tout engagement.';
+    $('gal-wa').href=wa('Bonjour, je souhaite un prix sur la famille : '+f.t+'.');
+    gal.classList.add('ouverte');
+    document.body.classList.add('fige');
+    $('gal-x').focus();
+  }
+  function fermerGalerie(){
+    gal.classList.remove('ouverte');
+    document.body.classList.remove('fige');
+    if(dernierFocus) dernierFocus.focus();
+  }
+  [].slice.call(document.querySelectorAll('.fam[data-fam]')).forEach(function(c){
+    c.addEventListener('click',function(){dernierFocus=c;ouvrirGalerie(c.getAttribute('data-fam'));});
+  });
+  $('gal-x').addEventListener('click',fermerGalerie);
+  gal.addEventListener('click',function(e){if(e.target===gal)fermerGalerie();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&gal.classList.contains('ouverte'))fermerGalerie();});
+
+  /* --- calculateur briques (surface de mur) --- */
+  var input=$('m2');
+  function calcMur(){
+    var m2=nb(input.value), briques=m2*PAR_M2, p=palier(briques);
+    var total=briques*p.pu;
+    var tonnes=briques*KG_BRIQUE/1000;
+    $('r-b').textContent=fmt(briques);
+    $('r-p').textContent=p.nom+' · '+p.pu+' F';
+    $('r-kg').textContent=(tonnes<10?tonnes.toFixed(1):fmt(tonnes)).replace('.',',')+' t';
+    $('r-tot').textContent=fmt(total)+' F';
+    $('r-eur').textContent='soit environ '+fmt(total/EUR)+' €';
+    $('r-wa').href=wa('Bonjour, je souhaite un devis briques.\n'
+      +'Surface de mur : '+fmt(m2)+' m2\n'
+      +'Briques estimees : '+fmt(briques)+'\n'
+      +'Palier : '+p.nom+' ('+p.pu+' F/brique)\n'
+      +'Montant briques : '+fmt(total)+' FCFA\n'
+      +'Poids a transporter : '+tonnes.toFixed(1).replace('.',',')+' t\n'
+      +'Merci de me chiffrer le transport jusqu a : ');
+  }
+  input.addEventListener('input',calcMur); calcMur();
+
+  /* --- choisir ma maison --- */
+  var cartes=[].slice.call(document.querySelectorAll('#maisons .mai'));
+  var hm2=$('hm2'), courant=null;
+
+  function calcMaison(){
+    var m2=nb(hm2.value), briques=Math.round(m2*PAR_M2_HAB), p=palier(briques);
+    var total=briques*p.pu, tonnes=briques*KG_BRIQUE/1000;
+    var nom=courant?courant.getAttribute('data-nom'):'sur mesure';
+    var det=courant?courant.getAttribute('data-det'):'';
+    $('h-nom').textContent=nom+' · '+fmt(m2)+' m²';
+    $('h-b').textContent=fmt(briques);
+    $('h-p').textContent=p.nom+' · '+p.pu+' F';
+    $('h-c').textContent=(tonnes<10?tonnes.toFixed(1):fmt(tonnes)).replace('.',',')+' t';
+    $('h-tot').textContent=fmt(total)+' F';
+    $('h-eur').textContent='soit environ '+fmt(total/EUR)+' €';
+    $('h-wa').href=wa('Bonjour, je souhaite une etude pour ma maison.\n'
+      +'Format : '+nom+(det?' ('+det+')':'')+'\n'
+      +'Surface habitable : '+fmt(m2)+' m2\n'
+      +'Briques estimees : '+fmt(briques)+'\n'
+      +'Palier : '+p.nom+' ('+p.pu+' F/brique)\n'
+      +'Poste briques : '+fmt(total)+' FCFA\n'
+      +'Merci de me transmettre le devis complet poste par poste.');
+  }
+
+  cartes.forEach(function(c){
+    c.addEventListener('click',function(){
+      cartes.forEach(function(o){o.setAttribute('aria-pressed','false');});
+      c.setAttribute('aria-pressed','true');
+      courant=c;
+      hm2.value=c.getAttribute('data-m2');
+      calcMaison();
+    });
+    if(c.getAttribute('aria-pressed')==='true') courant=c;
+  });
+  hm2.addEventListener('input',function(){
+    var v=nb(hm2.value);
+    var match=cartes.filter(function(c){return +c.getAttribute('data-m2')===v;})[0];
+    cartes.forEach(function(o){o.setAttribute('aria-pressed', o===match?'true':'false');});
+    courant=match||null;
+    calcMaison();
+  });
+  calcMaison();
+})();
+</script>
+</body>
+</html>
